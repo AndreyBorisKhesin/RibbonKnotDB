@@ -1,6 +1,7 @@
 \documentclass[twoside]{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{chngcntr}
 \usepackage{fancyhdr}
 \usepackage[margin=1in]{geometry}
 \usepackage{import}
@@ -32,6 +33,9 @@
 % Indent
 \usepackage{indentfirst}
 \setlength{\parindent}{0.3in}
+
+\newcommand\theorems[0]{\newtheorem{theorem}{Theorem}[section]}
+\newcommand\subtheorems[0]{\newtheorem{theorem}{Theorem}[subsection]}
 
 % Title section
 \pagestyle{fancy}
@@ -110,12 +114,14 @@
 % Section headers
 \newcounter{papersectioncounter}
 \newcounter{papersubsectioncounter}[papersectioncounter]
-\newcommand\papersection[1]{
-\stepcounter{papersectioncounter}
-{\begin{center}\Roman{papersectioncounter} \textsc{#1}\end{center}}}
+\newcommand\papersection[1]{\stepcounter{papersectioncounter}
+\setcounter{section}{\thepapersectioncounter}
+\begin{center}\Roman{papersectioncounter} \textsc{#1}\end{center}}
 \newcommand\papersubsection[1]{\stepcounter{papersubsectioncounter}
-{\begin{center}\Roman{papersectioncounter}.\Roman{papersubsectioncounter}
+\setcounter{subsection}{\thepapersubsectioncounter}{\begin{center}
+\Roman{papersectioncounter}.\Roman{papersubsectioncounter}
 \textsc{#1}\\[0.5em]\end{center}}}
+\makeatletter\@addtoreset{theorem}{papersubsectioncounter}\makeatother
 
 %equation
 \newcounter{paperequationcounter}
