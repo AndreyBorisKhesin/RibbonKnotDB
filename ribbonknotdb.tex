@@ -1,13 +1,62 @@
 \input{header}
 \begin{document}
-\papertitle{DO THIS LATER}
-\paperauthor{D}{Bar-Natan}{DUDE}
-\paperauthor{A}{Khesin}{GUY}
-\paperdate{NOT SURE YET}
+\papertitle{TODO TITLE}
+\paperauthor{D}{Bar-Natan}{TODO POSITION?}
+\paperauthor{A}{Khesin}{TODO POSITION?}
+\paperdate{TODO DATE}
 \begin{paperabstract}
-I AM REALLY TEMPTED TO MENTION NUTELLA HERE.
+TODO ABSTRACT
 \end{paperabstract}
 \begin{paper}
+\theorems
 \papersection{Introduction}
+A ribbon knot is a knot that contains only ribbon singularities.
+A ribbon singularity occurs when the disk that is bounded by the knot only
+intersects itself in pairs, e.g. when the boundary of the disk passes through
+said disk, there will be another intersection ``nearby'' with the opposite sign.
+A ``ribbon presentation'' for a knot depicts the knot as the image of a series
+of disks, each connected to the next by an arc, the ribbon, which is ``split''
+into two strands after applying the map.
+
+A symmetric union is a knot that is symmetric about a central axis, save the
+crossings that lie on the axis itself.
+It is well-known that any symmetric union is a ribbon knot.
+However, at this time of this writing TODO SOURCE it is not yet known whether
+every ribbon knot can be expressed as a symmetric union.
+For all 21 knots with 10 or fewer crossings it has been shown that they can be
+expressed as symmetric unions TODO SOURCE.
+
+Here we attempt to publish a database of the planar diagram crossing information
+of the 21 knots.
+They are $6_1$, $8_8$, $8_9$, $8_{20}$, $9_{27}$, $9_{41}$, $9_{46}$, $10_3$,
+$10_{22}$, $10_{35}$, $10_{42}$, $10_{48}$, $10_{75}$, $10_{87}$, $10_{99}$,
+$10_{123}$, $10_{129}$, $10_{137}$, $10_{140}$, $10_{153}$, and $10_{155}$.
+This notation consists of a list of crossings of the form $X_{a,b,c,d}$ which
+labels the four strands in a crossing from the lower incoming string and
+continues counterclockwise.
+TODO DIAGRAM
+\papersection{Tangles}
+A tangle is a collection of joined crossings with a certain number of ``loose
+ends'' sticking out.
+A tangle with $n$ strands will have $2n$ such ends sticking out.
+For convenience, a tangle is drawn as a braid, with $n$ ends along the top and
+$n$ ends along the bottom where the order of the strands along the top is the
+same as along the bottom.
+In other words, if one were to follow each strand in a tangle, they would end up
+exactly below the point at which they started.
+Let the tops of the strands be denoted by $1_t$, $2_t$, ..., $n_t$, and the
+bottoms  by $1_b$, $2_b$, ..., $n_b$.
+TODO DIAGRAM
+
+A closure of a tangle is a manner of stitching the ends of the tangle together
+to reduce the resulting number of strands.
+\begin{theorem}
+A knot $K$ is ribbon$\iff\exists$ a tangle with $2n$ strands where the stitching
+of the pairs $(1_t$, $2_t)$, $(3_t$, $4_t)$, ..., $((2n-1)_t$, $(2n)_t)$ creates
+the trivial tangle with $n$ strands, while stitching the pairs $(1_b$, $2_b)$,
+$(2_t$, $3_t)$, $(3_b$, $4_b)$, ..., $((2n-2)_t$, $(2n-1)_t)$, $((2n-1)_b$,
+$(2n)_b)$ creates a tangle with 1 strand, identical to the knot $K$ (obtained by
+stitching $(1_t$, $(2n)_t)$.
+\end{theorem}
 \end{paper}
 \end{document}
