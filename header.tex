@@ -1,37 +1,36 @@
 \documentclass[twoside]{article}
 \usepackage{amsmath}
 \usepackage{amssymb}
-\usepackage{chngcntr}
-\usepackage{fancyhdr}
-\usepackage[margin=1in]{geometry}
-\usepackage{import}
-\usepackage{multicol}
-\usepackage[strict]{changepage}
-\usepackage{color,colortbl}
-\usepackage{tabu}
-\usepackage{multirow}
+\usepackage{amsthm}
 \usepackage{capt-of}
 \usepackage{caption}
-\usepackage{tikz}
-\usetikzlibrary{positioning,matrix,shapes,chains,arrows}
+\captionsetup{labelformat=empty,labelsep=none}
+\usepackage[strict]{changepage}
+\usepackage{chngcntr}
+\usepackage[americanvoltage, siunitx]{circuitikz}
+\usepackage{color,colortbl}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage{gensymb}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{import}
+\usepackage{indentfirst}
+\usepackage{mathptmx}
+\usepackage{mathrsfs}
+\usepackage{multicol}
+\usepackage{multirow}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
-\captionsetup{labelformat=empty,labelsep=none}
-\usepackage{graphicx}
-\usepackage{gensymb}
+\usepgfplotslibrary{external}
 \usepackage{siunitx}
-\usepackage[americanvoltage, siunitx]{circuitikz}
-\usepackage{mathrsfs}
+\usepackage{tabu}
+\usepackage{tikz}
+\usetikzlibrary{positioning,matrix,shapes,chains,arrows}
+\tikzexternalize[prefix=precompiled_figures/]
 \usepackage{xspace}
 
-\usepgfplotslibrary{external}
-\tikzexternalize[prefix=precompiled_figures/]
-
-\usepackage[T1]{fontenc}
-\usepackage{mathptmx}
-
 % Indent
-\usepackage{indentfirst}
 \setlength{\parindent}{0.3in}
 
 \newcommand\theorems[0]{\newtheorem{theorem}{Theorem}[section]}
