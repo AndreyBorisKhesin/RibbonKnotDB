@@ -65,7 +65,7 @@ full-closure of $T$ creates a tangle with 1 strand, identical to the knot $K$
 (obtained by stitching $(1_t$, $(2n)_t)$.
 \end{theorem}
 \begin{proof}
-($\impliedby$)
+$(\impliedby)$
 If the top closure of a tangle $T$ results in $n$ trivial strands that can be
 untangled, that means among the top-closure of $T$, there are only ribbon
 singularities, as any clasp singularities would not make the top-closure of $T$
@@ -79,6 +79,26 @@ This has effectively connected every adjacent pair of links as well as the first
 and last links together, creating the original knot by our assumption.
 Thus, since the resultant knot only contains ribbon singularities, $K$ is
 ribbon.
+\end{proof}
+\begin{proof}
+$(\implies)$
+TODO PROVE FOR $n>2$
+If a knot is ribbon and has only two disks with a single ribbon passing through
+them, then to create the tangle, each disk can be cut and the ribbon can be cut.
+The top-closure will be result of stitching across the ribbon.
+More rigourously, when cutting the ribbon, we are cutting the knot twice, one
+cut creates the ends $4_t$ and $1_t$ while the other creates the ends $2_t$ and
+$3_t$, in order of appearance when moving along the knot.
+Since the ribbon's strands run antiparallel to each other, then $1_t$ is closer
+to $2_t$ and vice versa.
+The other cuts are placed on the disk for convenience, but the only restriction
+on them is that they have to be on the outside of the knot, and there has to be
+one on each side of the ribbon cuts.
+It is clear that the full-closure will create the original knot $K$, while the
+top-closure will connect $1_t$ and $2_t$ as well as $3_t$ and $4_t$ which will
+trivially untangle by the properties of the ribbon, creating the trivial tangle
+with 2 strands.
+TODO DIAGRAM
 \end{proof}
 \end{paper}
 \end{document}
