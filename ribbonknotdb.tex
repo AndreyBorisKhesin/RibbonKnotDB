@@ -59,12 +59,26 @@ $4_b)$, ..., $((2n-2)_t$, $(2n-1)_t)$, $((2n-1)_b$, $(2n)_b)$ to create 1
 strand.
 TODO DIAGRAM
 \begin{theorem}
-A knot $K$ is ribbon$\iff\exists$ a tangle $T$ with $2n$ strands where the top
-closure of $T$ creates the trivial tangle with $n$ strands, while full-closure
-of $T$ creates a tangle with 1 strand, identical to the knot $K$ (obtained by
-stitching $(1_t$, $(2n)_t)$.
+A knot $K$ is ribbon$\iff\exists$ a tangle $T$ with $2n$ strands where the
+top-closure of $T$ creates the trivial tangle with $n$ strands, while
+full-closure of $T$ creates a tangle with 1 strand, identical to the knot $K$
+(obtained by stitching $(1_t$, $(2n)_t)$.
 \end{theorem}
 \begin{proof}
+($\impliedby$)
+If the top closure of a tangle $T$ results in $n$ trivial strands that can be
+untangled, that means among the top-closure of $T$, there are only ribbon
+singularities, as any clasp singularities would not make the top-closure of $T$
+trivial.
+We can now consider closing those $n$ strands along the bottom to create $n$
+unlinks.
+Then each unlink is connected to the next using a single strand.
+That strand may pass through the plane of the original knot, but if it were to
+be unzipped into strands, it would result in only ribbon singularities.
+This has effectively connected every adjacent pair of links as well as the first
+and last links together, creating the original knot by our assumption.
+Thus, since the resultant knot only contains ribbon singularities, $K$ is
+ribbon.
 \end{proof}
 \end{paper}
 \end{document}
