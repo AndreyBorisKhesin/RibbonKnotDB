@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    115135,       2707]
-NotebookOptionsPosition[    114841,       2693]
-NotebookOutlinePosition[    115187,       2708]
-CellTagsIndexPosition[    115144,       2705]
+NotebookDataLength[    116910,       2744]
+NotebookOptionsPosition[    116616,       2730]
+NotebookOutlinePosition[    116962,       2745]
+CellTagsIndexPosition[    116919,       2742]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -367,42 +367,43 @@ Cell[BoxData[{
          RowBox[{"Apart", "@", 
           FractionBox["\[Omega]", "\[Beta]"]}], ",", 
          RowBox[{"Apart", "@", 
-          RowBox[{
-           RowBox[{"Join", "[", 
-            RowBox[{
-             RowBox[{"{", 
-              RowBox[{"Join", "[", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"\[Gamma]", "+", 
-                  RowBox[{"\[Beta]", " ", "\[Alpha]", " ", "\[Delta]"}]}], 
-                 "}"}], ",", 
-                RowBox[{"\[Epsilon]", "+", 
-                 RowBox[{"\[Beta]", " ", "\[Delta]", " ", "\[Theta]"}]}]}], 
-               "]"}], "}"}], ",", 
+          RowBox[{"Apart", "@", 
+           RowBox[{
+            RowBox[{"Join", "[", 
              RowBox[{
-              RowBox[{"Join", "[", 
-               RowBox[{
-                RowBox[{"{", 
-                 RowBox[{"\[Phi]", "+", 
-                  RowBox[{"\[Beta]", " ", "\[Alpha]", " ", "\[Psi]"}]}], 
-                 "}"}], ",", 
-                RowBox[{"If", "[", 
-                 RowBox[{
-                  RowBox[{"\[CapitalXi]", "\[Equal]", 
-                   RowBox[{"{", "}"}]}], ",", 
-                  RowBox[{"{", "\[CapitalXi]", "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"Join", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\[Gamma]", "+", 
+                   RowBox[{"\[Beta]", " ", "\[Alpha]", " ", "\[Delta]"}]}], 
+                  "}"}], ",", 
+                 RowBox[{"\[Epsilon]", "+", 
+                  RowBox[{"\[Beta]", " ", "\[Delta]", " ", "\[Theta]"}]}]}], 
+                "]"}], "}"}], ",", 
+              RowBox[{
+               RowBox[{"Join", "[", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"\[Phi]", "+", 
+                   RowBox[{"\[Beta]", " ", "\[Alpha]", " ", "\[Psi]"}]}], 
+                  "}"}], ",", 
+                 RowBox[{"If", "[", 
                   RowBox[{
-                   RowBox[{"(", 
+                   RowBox[{"\[CapitalXi]", "\[Equal]", 
+                    RowBox[{"{", "}"}]}], ",", 
+                   RowBox[{"{", "\[CapitalXi]", "}"}], ",", 
+                   RowBox[{
+                    RowBox[{"(", 
                     RowBox[{"\[CapitalXi]", "+", 
                     RowBox[{"\[Beta]", 
                     RowBox[{
                     RowBox[{
                     RowBox[{"{", "\[Psi]", "}"}], "\[Transpose]"}], ".", 
                     RowBox[{"{", "\[Theta]", "}"}]}]}]}], ")"}], 
-                   "\[Transpose]"}]}], "]"}]}], "]"}], "\[Transpose]"}]}], 
-            "]"}], "\[LeftDoubleBracket]", 
-           RowBox[{"o", ",", "o"}], "\[RightDoubleBracket]"}]}], ",", 
+                    "\[Transpose]"}]}], "]"}]}], "]"}], "\[Transpose]"}]}], 
+             "]"}], "\[LeftDoubleBracket]", 
+            RowBox[{"o", ",", "o"}], "\[RightDoubleBracket]"}]}]}], ",", 
          RowBox[{
          "n", "\[LeftDoubleBracket]", "o", "\[RightDoubleBracket]"}]}], "]"}],
         "/.", 
@@ -447,8 +448,9 @@ Cell[BoxData[{
          SubscriptBox["T", "c"]}], ",", 
         RowBox[{"{", 
          RowBox[{"j", ",", 
-          RowBox[{"{", "l", "}"}]}], "}"}]}], "]"}]}], "]"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
+          RowBox[{"{", 
+           RowBox[{"a", ",", "b", ",", "l"}], "}"}]}], "}"}]}], "]"}]}], 
+     "]"}]}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{
@@ -507,9 +509,34 @@ Cell[BoxData[{
            ",", 
            RowBox[{
            "l", "\[LeftDoubleBracket]", "4", "\[RightDoubleBracket]"}]}], 
-          "]"}], "\[Rule]", "\"\<2\>\""}]], "@", 
-       RowBox[{"K", "@", 
-        SubscriptBox["i", "j"]}]}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+          "]"}], "\[Rule]", "\"\<2\>\""}]], "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"M", "@", 
+          RowBox[{"K", "@", 
+           SubscriptBox["i", "j"]}]}], "/.", 
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{
+            SubscriptBox["T", "k"], "\[Rule]", 
+            SubscriptBox["T", "\"\<1\>\""]}], ",", 
+           RowBox[{"{", 
+            RowBox[{"k", ",", 
+             RowBox[{"Flatten", "@", 
+              RowBox[{"l", "\[LeftDoubleBracket]", 
+               RowBox[{";;", "2"}], "\[RightDoubleBracket]"}]}]}], "}"}]}], 
+          "]"}]}], "/.", 
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{
+           SubscriptBox["T", "k"], "\[Rule]", 
+           SubscriptBox["T", "\"\<2\>\""]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"Flatten", "@", 
+             RowBox[{"l", "\[LeftDoubleBracket]", 
+              RowBox[{"3", ";;"}], "\[RightDoubleBracket]"}]}]}], "}"}]}], 
+         "]"}]}], "]"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"B", "@", "K_"}], ":=", 
@@ -1651,7 +1678,17 @@ Cell[BoxData[{
    3.6626034884618096`*^9, 3.6626035102644873`*^9}, {3.6626035799336967`*^9, 
    3.66260366857111*^9}, {3.66260373570183*^9, 3.662603739956889*^9}, 
    3.662604021396697*^9, {3.6626048490954123`*^9, 3.6626048573709717`*^9}, {
-   3.662605019317882*^9, 3.662605025739175*^9}}],
+   3.662605019317882*^9, 3.662605025739175*^9}, {3.663104990295695*^9, 
+   3.663104996585246*^9}, {3.6631050614603643`*^9, 3.663105079945298*^9}, {
+   3.6631054396029415`*^9, 3.6631054456906214`*^9}, {3.663105500284086*^9, 
+   3.6631055067626324`*^9}, {3.663106574668127*^9, 3.6631065819713993`*^9}, {
+   3.6631068081713123`*^9, 3.663106814345958*^9}, {3.6631068452993975`*^9, 
+   3.6631068471149473`*^9}, {3.6631068934849744`*^9, 3.663106993445687*^9}, {
+   3.663107459425733*^9, 3.6631074726091127`*^9}, 3.6631075424505515`*^9, 
+   3.6631077754139853`*^9, {3.6631079481406994`*^9, 3.6631079662618456`*^9}, {
+   3.663108023480309*^9, 3.6631080299230433`*^9}, {3.6631083283617525`*^9, 
+   3.663108330945367*^9}, {3.663108402644475*^9, 3.663108408626728*^9}, {
+   3.663108455114944*^9, 3.6631084809200125`*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -2707,8 +2744,8 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 76430, 1633, 1558, "Input"],
-Cell[76991, 1655, 37846, 1036, 852, "Input"]
+Cell[558, 20, 78205, 1670, 1578, "Input"],
+Cell[78766, 1692, 37846, 1036, 852, "Input"]
 }
 ]
 *)
