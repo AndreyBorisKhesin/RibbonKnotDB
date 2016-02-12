@@ -33,8 +33,15 @@
 % Indent
 \setlength{\parindent}{0.3in}
 
-\newcommand\theorems[0]{\newtheorem{theorem}{Theorem}[section]}
-\newcommand\subtheorems[0]{\newtheorem{theorem}{Theorem}[subsection]}
+\newcommand\theorems[0]{\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{corollary}{Corollary}[section]\newtheorem{lemma}{Lemma}[section]
+\newtheorem{remark}{Remark}[section]\newtheorem{theorem}{Theorem}[section]
+\newtheorem{question}{Question}[section]}
+\newcommand\subtheorems[0]{\newtheorem{conjecture}{Conjecture}[subsection]
+\newtheorem{corollary}{Corollary}[subsection]
+\newtheorem{lemma}{Lemma}[subsection]\newtheorem{remark}{Remark}[subsection]
+\newtheorem{theorem}{Theorem}[subsection]
+\newtheorem{question}{Question}[subsection]}
 
 % Title section
 \pagestyle{fancy}
