@@ -8,6 +8,7 @@
 *.toc
 *.fmt
 *.pdf
+!snap*.pdf
 
 ## Intermediate documents:
 *.dvi
