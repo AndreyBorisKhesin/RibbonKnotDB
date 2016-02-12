@@ -33,15 +33,19 @@
 % Indent
 \setlength{\parindent}{0.3in}
 
-\newcommand\theorems[0]{\newtheorem{conjecture}{Conjecture}[section]
-\newtheorem{corollary}{Corollary}[section]\newtheorem{lemma}{Lemma}[section]
-\newtheorem{remark}{Remark}[section]\newtheorem{theorem}{Theorem}[section]
-\newtheorem{question}{Question}[section]}
-\newcommand\subtheorems[0]{\newtheorem{conjecture}{Conjecture}[subsection]
-\newtheorem{corollary}{Corollary}[subsection]
-\newtheorem{lemma}{Lemma}[subsection]\newtheorem{remark}{Remark}[subsection]
-\newtheorem{theorem}{Theorem}[subsection]
-\newtheorem{question}{Question}[subsection]}
+\newcounter{papertheoremamount}
+\newcommand\theorems[0]{\newtheorem{conjecture}[subsection]{Conjecture}
+\newtheorem{corollary}[subsection]{Corollary}
+\newtheorem{lemma}[subsection]{Lemma}\newtheorem{remark}[subsection]{Remark}
+\newtheorem{theorem}[subsection]{Theorem}
+\newtheorem{question}[subsection]{Question}}
+\newcommand\subtheorems[0]{\stepcounter{papertheoremamount}
+\newtheorem{conjecture}[subsubsection]{Conjecture}
+\newtheorem{corollary}[subsubsection]{Corollary}
+\newtheorem{lemma}[subsubsection]{Lemma}
+\newtheorem{remark}[subsubsection]{Remark}
+\newtheorem{theorem}[subsubsection]{Theorem}
+\newtheorem{question}[subsubsection]{Question}}
 
 % Title section
 \pagestyle{fancy}
@@ -117,17 +121,18 @@
 \usebox{\sourcebox}
 }
 
-% Section headers
+%Section headers
 \newcounter{papersectioncounter}
 \newcounter{papersubsectioncounter}[papersectioncounter]
 \newcommand\papersection[1]{\stepcounter{papersectioncounter}
-\setcounter{section}{\thepapersectioncounter}
+\stepcounter{section}
 \begin{center}\Roman{papersectioncounter} \textsc{#1}\end{center}}
 \newcommand\papersubsection[1]{\stepcounter{papersubsectioncounter}
-\setcounter{subsection}{\thepapersubsectioncounter}{\begin{center}
-\Roman{papersectioncounter}.\Roman{papersubsectioncounter}
+\addtocounter{subsection}{\thepapertheoremamount}
+\setcounter{subsubsection}{0}
+{\begin{center}
+\Roman{section}.\Roman{papersubsectioncounter}
 \textsc{#1}\\[0.5em]\end{center}}}
-\makeatletter\@addtoreset{theorem}{papersubsectioncounter}\makeatother
 
 %equation
 \newcounter{paperequationcounter}
@@ -179,7 +184,6 @@ $\begin{array}{r}
 \newcommand{\papertableuheadersymbole}[1]{&\multicolumn{2}{c|[outer]}{$#1$}}
 \newcommand{\papertableuheaderunit}[1]{&\multicolumn{2}{c|[inner]}{(#1)}}
 \newcommand{\papertableuheaderunite}[1]{&\multicolumn{2}{c|[outer]}{(#1)}}
-
 \newcommand{\papertablecheadersymbol}[1]{&$#1$}
 \newcommand{\papertablecheaderunit}[2]{&($\pm$#1 #2)}
 
