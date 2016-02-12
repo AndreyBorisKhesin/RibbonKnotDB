@@ -37,66 +37,57 @@ $n$ ends along the bottom where the order of the strands along the top is the
 same as along the bottom.
 In other words, if one were to follow each strand in a tangle, they would end up
 exactly below the point at which they started.
-Let the tops of the strands be denoted by $1_t$, $2_t$, ..., $n_t$, and the
-bottoms  by $1_b$, $2_b$, ..., $n_b$.
+Let the tops of the strands be denoted by $1_t,~2_t$, ..., $n_t$, and the
+bottoms  by $1_b,~2_b$, ..., $n_b$.
 TODO DIAGRAM
 
 A closure of a tangle is a manner of stitching the ends of the tangle together
 to reduce the resulting number of strands.
 For a tangle with $2n$ strands, we define the top-closure of the tangle as the
-closure that stitches together the pairs $(1_t$, $2_t)$, $(3_t$, $4_t)$, ...,
-$((2n-1)_t$, $(2n)_t)$ to create $n$ strands.
+closure that stitches together the pairs $(1_t,~2_t),~(3_t,~4_t)$, ...,
+$((2n-1)_t,~(2n)_t)$ to create $n$ strands.
 For a tangle with $2n$ strands, we define the full-closure of the tangle as the
-closure that stitches together the pairs $(1_b$, $2_b)$, $(2_t$, $3_t)$, $(3_b$,
-$4_b)$, ..., $((2n-2)_t$, $(2n-1)_t)$, $((2n-1)_b$, $(2n)_b)$ to create 1
+closure that stitches together the pairs $(1_b,~2_b),~(2_t,~3_t),~(3_b$,
+$4_b)$, ..., $((2n-2)_t,~(2n-1)_t),~((2n-1)_b,~(2n)_b)$ to create 1
 strand.
 TODO DIAGRAM
+
+We point out that in both scenarios, one is effectively closing the strands
+along the bottom in the same manner.
+In the top-closure, the strands create an untangle which can be turned into the
+unlink by closing the strands along the bottom as it is done in the
+full-closure.
+
 \begin{theorem}
 A knot $K$ is ribbon$\iff\exists$ a tangle $T$ with $2n$ strands where the
 top-closure of $T$ creates the trivial tangle with $n$ strands, while
 full-closure of $T$ creates a tangle with 1 strand, identical to the knot $K$
-(obtained by stitching $(1_t$, $(2n)_t)$.
+(obtained by stitching $(1_t,~(2n)_t)$).
 \end{theorem}
 \begin{proof}
 $(\impliedby)$
-If the top closure of a tangle $T$ results in $n$ trivial strands that can be
+If the top-closure of a tangle $T$ results in $n$ trivial strands that can be
 untangled, that means among the top-closure of $T$, there are only ribbon
 singularities, as any clasp singularities would not make the top-closure of $T$
 trivial.
 We can now consider closing those $n$ strands along the bottom to create $n$
-unlinks.
-Then each unlink is connected to the next using a single strand.
+unknots.
+Then each unknot is connected to the next using a single strand.
 That strand may pass through the plane of the original knot, but if it were to
 be unzipped into strands, it would result in only ribbon singularities.
 This has effectively connected every adjacent pair of links as well as the first
 and last links together, creating the original knot by our assumption.
-Thus, since the resultant knot only contains ribbon singularities, $K$ is
-ribbon.
+Since the resultant knot only contains ribbon singularities, $K$ is ribbon.
 \end{proof}
 \begin{proof}
 $(\implies)$
-TODO PROVE FOR $n>2$
-If a knot is ribbon and has only two disks with a single ribbon passing through
-them, then to create the tangle, each disk can be cut and the ribbon can be cut.
-The top-closure will be result of stitching across the ribbon.
-More rigourously, when cutting the ribbon, we are cutting the knot twice, one
-cut creates the ends $4_t$ and $1_t$ while the other creates the ends $2_t$ and
-$3_t$, in order of appearance when moving along the knot.
-Since the ribbon's strands run antiparallel to each other, then $1_t$ is closer
-to $2_t$ and vice versa.
-The other cuts are placed on the disk for convenience, but the only restriction
-on them is that they have to be on the outside of the knot, and there has to be
-one on each side of the ribbon cuts.
-It is clear that the full-closure will create the original knot $K$, while the
-top-closure will connect $1_t$ and $2_t$ as well as $3_t$ and $4_t$ which will
-trivially untangle by the properties of the ribbon, creating the trivial tangle
-with 2 strands.
-TODO DIAGRAM
+Consider a tangle $T$ with $n$ strands and $2n$ ends numbered $1_t$ to $(2n)_t$.
+
 \end{proof}
 \papersection{Symmetric Unions}
 We now provide a list of all 21 ribbon knots with 10 crossings or fewer.
 Each was originally a symmetric union provided by TODO SOURCE and was deformed
-to appear as the full closure of a tangle (with the extra stitching of $4_t$ and
+to appear as the full-closure of a tangle (with the extra stitching of $4_t$ and
 $1_t$).
 TODO DIAGRAM
 
@@ -114,9 +105,9 @@ TODO QUESTION
 \papersection{Database}
 Here we attempt to publish a database of the planar diagram crossing information
 of the 21 knots.
-They are $6_1$, $8_8$, $8_9$, $8_{20}$, $9_{27}$, $9_{41}$, $9_{46}$, $10_3$,
-$10_{22}$, $10_{35}$, $10_{42}$, $10_{48}$, $10_{75}$, $10_{87}$, $10_{99}$,
-$10_{123}$, $10_{129}$, $10_{137}$, $10_{140}$, $10_{153}$, and $10_{155}$.
+They are $6_1,~8_8,~8_9,~8_{20},~9_{27},~9_{41},~9_{46},~10_3$,
+$10_{22},~10_{35},~10_{42},~10_{48},~10_{75},~10_{87},~10_{99}$,
+$10_{123},~10_{129},~10_{137},~10_{140},~10_{153}$, and $10_{155}$.
 This notation consists of a list of crossings of the form $X_{a,b,c,d}$ which
 labels the four strands in a crossing from the lower incoming string and
 continues counterclockwise.
