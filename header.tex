@@ -34,18 +34,61 @@
 \setlength{\parindent}{0.3in}
 
 \newcounter{papertheoremamount}
-\newcommand\theorems[0]{\newtheorem{conjecture}[subsection]{Conjecture}
+\newcommand\theorems[0]{\newtheorem{claim}[subsection]{Claim}
+\newtheorem{conjecture}[subsection]{Conjecture}
 \newtheorem{corollary}[subsection]{Corollary}
 \newtheorem{lemma}[subsection]{Lemma}\newtheorem{remark}[subsection]{Remark}
 \newtheorem{theorem}[subsection]{Theorem}
-\newtheorem{question}[subsection]{Question}}
+\newtheorem{question}[subsection]{Question}
+\newenvironment{paperclaim}[1]
+{\begin{claim}\global\expandafter\edef\csname clm##1\endcsname{\thesubsection
+\noexpand\xspace}}{\end{claim}}
+\newenvironment{paperconjecture}[1]
+{\begin{conjecture}\global\expandafter\edef\csname cnj##1\endcsname{
+\thesubsection\noexpand\xspace}}{\end{conjecture}}
+\newenvironment{papercorollary}[1]
+{\begin{corollary}\global\expandafter\edef\csname cor##1\endcsname{
+\thesubsection\noexpand\xspace}}{\end{corollary}}
+\newenvironment{paperlemma}[1]
+{\begin{lemma}\global\expandafter\edef\csname lem##1\endcsname{\thesubsection
+\noexpand\xspace}}{\end{lemma}}
+\newenvironment{paperremark}[1]
+{\begin{remark}\global\expandafter\edef\csname rem##1\endcsname{\thesubsection
+\noexpand\xspace}}{\end{remark}}
+\newenvironment{papertheorem}[1]
+{\begin{theorem}\global\expandafter\edef\csname thm##1\endcsname{\thesubsection
+\noexpand\xspace}}{\end{theorem}}
+\newenvironment{paperquestion}[1]
+{\begin{question}\global\expandafter\edef\csname qtn##1\endcsname{\thesubsection
+\noexpand\xspace}}{\end{question}}}
 \newcommand\subtheorems[0]{\stepcounter{papertheoremamount}
 \newtheorem{conjecture}[subsubsection]{Conjecture}
 \newtheorem{corollary}[subsubsection]{Corollary}
 \newtheorem{lemma}[subsubsection]{Lemma}
 \newtheorem{remark}[subsubsection]{Remark}
 \newtheorem{theorem}[subsubsection]{Theorem}
-\newtheorem{question}[subsubsection]{Question}}
+\newtheorem{question}[subsubsection]{Question}
+\newenvironment{paperclaim}[1]
+{\begin{claim}\global\expandafter\edef\csname clm##1\endcsname{\thesubsubsection
+\noexpand\xspace}}{\end{claim}}
+\newenvironment{paperconjecture}[1]
+{\begin{conjecture}\global\expandafter\edef\csname cnj##1\endcsname{
+\thesubsubsection\noexpand\xspace}}{\end{conjecture}}
+\newenvironment{papercorollary}[1]
+{\begin{corollary}\global\expandafter\edef\csname cor##1\endcsname{
+\thesubsubsection\noexpand\xspace}}{\end{corollary}}
+\newenvironment{paperlemma}[1]
+{\begin{lemma}\global\expandafter\edef\csname lem##1\endcsname{\thesubsubsection
+\noexpand\xspace}}{\end{lemma}}
+\newenvironment{paperremark}[1]
+{\begin{remark}\global\expandafter\edef\csname rem##1\endcsname{
+\thesubsubsection\noexpand\xspace}}{\end{remark}}
+\newenvironment{papertheorem}[1]
+{\begin{theorem}\global\expandafter\edef\csname thm##1\endcsname{
+\thesubsubsection\noexpand\xspace}}{\end{theorem}}
+\newenvironment{paperquestion}[1]
+{\begin{question}\global\expandafter\edef\csname qtn##1\endcsname{
+\thesubsubsection\noexpand\xspace}}{\end{question}}}
 
 % Title section
 \pagestyle{fancy}
