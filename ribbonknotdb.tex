@@ -23,7 +23,7 @@ into two strands after applying the map.
 
 A symmetric union is a knot that is symmetric about a central axis, save the
 crossings that lie on the axis itself.
-It is well-known that any symmetric union is a ribbon knot.
+It is well known that any symmetric union is a ribbon knot.
 However, at this time of this writing TODO SOURCE it is not yet known whether
 every ribbon knot can be expressed as a symmetric union.
 For all 21 knots with 10 or fewer crossings it has been shown that they can be
@@ -43,32 +43,31 @@ TODO DIAGRAM
 
 A closure of a tangle is a manner of stitching the ends of the tangle together
 to reduce the resulting number of strands.
-For a tangle with $2n$ strands, we define the top-closure of the tangle as the
+For a tangle with $2n$ strands, we define the top closure of the tangle as the
 closure that stitches together the pairs
 $(1_t,~2_t),~(3_t,~4_t),~...,~((2n-1)_t,~(2n)_t)$ to create $n$ strands.
-For a tangle with $2n$ strands, we define the full-closure of the tangle as the
+For a tangle with $2n$ strands, we define the full closure of the tangle as the
 closure that stitches together the pairs $(1_b,~2_b),~(2_t,~3_t),~(3_b$,
 $4_b),~...,~((2n-2)_t,~(2n-1)_t),~((2n-1)_b,~(2n)_b)$ to create 1 strand.
 TODO DIAGRAM
 
 We point out that in both scenarios, one is effectively closing the strands
 along the bottom in the same manner.
-In the top-closure, the strands create an untangle which can be turned into the
+In the top closure, the strands create an untangle which can be turned into the
 unlink by closing the strands along the bottom as it is done in the
-full-closure.
+full closure.
 
-\begin{theorem}
+\begin{papertheorem}{ribbon}
 A knot $K$ is ribbon$\iff\exists$ a tangle $T$ with $2n$ strands where the
-top-closure of $T$ creates the trivial tangle with $n$ strands, while
-full-closure of $T$ creates a tangle with 1 strand, identical to the knot $K$
+top closure of $T$ creates the trivial tangle with $n$ strands, while
+full closure of $T$ creates a tangle with 1 strand, identical to the knot $K$
 (obtained by stitching $(1_t,~(2n)_t)$).
-\end{theorem}
+\end{papertheorem}
 \begin{proof}
-We s
-If the top-closure of a tangle $T$ results in $n$ trivial strands that can be
-untangled, that means among the top-closure of $T$, there are only ribbon
-singularities, as any clasp singularities would not make the top-closure of $T$
-trivial.
+If the top closure of a tangle $T$ results in $n$ trivial strands that can be
+untangled, that means among the crossings that make up the top closure of $T$,
+there are only ribbon singularities, as any clasp singularities would not make
+the top closure of $T$ trivial.
 We can now consider closing those $n$ strands along the bottom to create $n$
 unknots.
 Then each unknot is connected to the next using a single strand.
@@ -78,50 +77,74 @@ This has effectively connected every adjacent pair of links as well as the first
 and last links together, creating the original knot by our assumption.
 Since the resultant knot only contains ribbon singularities, $K$ is ribbon.
 
-Conversely, consider a tangle $T$ with $n$ strands and $2n$ ends along the top
-numbered $1_t$ to $(2n)_t$.
-\begin{lemma} If a tangle $T$ with $n$ strands with $2n$ ends along the top can
-be top-closed (with $n$ stitchings) to create the unlink consisting of $n$
-unknots, then $\exists$ a tangle $T'$ consisting of $2n$ strands with $2n$ ends
-along the top and $2n$ ends along the bottom such that applying the stitchings
-$(1_b,~2_b),~(2_t,~3_t),~(3_b~4_b),~...,~((2n-2)_t,~(2n-1)_t),~((2n-1)_b,~
-(2n)_b)$ (just the bottom part of the full-closure) results in $T$.
-TODO DIAGRAM
-\end{lemma}
+Conversely, let us consider a tangle $T$ with $n$ strands and $2n$ ends along
+the top numbered $1_t$ to $(2n)_t$.
+\begin{paperlemma}{tangles}
+If a tangle $T$ with $n$ strands with $2n$ ends along the top can be top closed
+(with $n$ stitchings) to create the unlink consisting of $n$ unknots, then
+$\exists$ a tangle $T'$ consisting of $2n$ strands with $2n$ ends along the top
+and $2n$ ends along the bottom such that applying the stitchings$(1_b,~2_b),~
+(2_t,~3_t),~(3_b~4_b),~...,~((2n-2)_t,~(2n-1)_t),~((2n-1)_b,~(2n)_b)$ (just the
+bottom part of the full closure) results in $T$. TODO DIAGRAM
+\end{paperlemma}
 \begin{proof}[Proof of Lemma]
-Once $T$ is closed, a continuous deformation of three-dimensional space turns it
+Once $T$ is closed, a continuous deformation of three dimensional space turns it
 into the unlink.
 Here, we extend the $n$ segments from the unlink to points outside the tangle,
 making sure that they do not intersect.
 This can be done trivially as $T$ is untangled.
 If we were to reverse the earlier spatial deformation, we will end up a tangle
 with $2n$ ends along both the top and the bottom, where the bottom ends extend
-to be stitched pairwise as described earlier and the tangle can be top-closed to
+to be stitched pairwise as described earlier and the tangle can be top closed to
 produce the untangle.
 This tangle is therefore $T'$.
 TODO DIAGRAM
 \end{proof}
 For any knot in its ribbon presentation, we can enclose the lower half of each
 component in one large tangle.
-The knot can be deformed until the ribbon connects the tops of the components,
-making sure the ends of the ribbons are above the tangle.
+The knot can be deformed until the ribbon connects the tops of the knot's
+components, making sure the ends of the ribbons are above the upper boundary of
+the tangle.
 TODO DIAGRAM
-It is important to note that everything above the tangle appears exactly as
-stated while everything inside the tangle can have any number of crossings.
-Since the space in the tangle but above the ribbon is connected to the outside
-of the knot, any strands that are there can be moved 
+It is important to note that everything above the upper boundary of the tangle
+is exactly as described while everything inside the tangle can have any number
+of crossings.
+Since any space that is in the tangle but above the ribbon is connected to the
+outside of the knot, any strands that pass through it can be moved up and around
+the knot to end up fully inside the tangle.
+This means that any ribbon knot with $n$ components can be transformed into a
+tangle with $2n$ ends along the top that has been top closed with $n-1$ ribbon
+bridges between each of the closing loops.
+TODO DIAGRAM
+This is equivalent to applying just the top part of the full closure to the
+tangle and then applying the closure $(1_t,~(2n)_t)$.
+TODO DIAGRAM
+We note that since any ribbon knot is a series of unzipped strands connecting
+subsequent components of the unlink, then the removal of these strands will
+result in the unlink.
+Similarly, if a ribbon knot were to be deformed in the above manner, then
+removing the ribbons would also result in the unlink.
+We also note that in any situation, removing a ribbon is equivalent to unzipping
+it, cutting both strands of the ribbon, then stitching each strand to the one it
+was unzipped from.
+TODO DIAGRAM
+Removing the ribbons from our deformed ribbon knot would therefore be identical
+to applying the top closure to its tangle.
+This means that the tangle that makes up the bulk of the knot satisfies the
+conditions for $T$ in \lemtangles, thus there exists a similar tangle T', that
+satisfies the conditions of the tangle we were looking for.
 \end{proof}
 \papersection{Symmetric Unions}
 We now provide a list of all 21 ribbon knots with 10 crossings or fewer.
 Each was originally a symmetric union provided by TODO SOURCE and was deformed
-to appear as the full-closure of a tangle (with the extra stitching of $4_t$ and
+to appear as the full closure of a tangle (with the extra stitching of $4_t$ and
 $1_t$).
 TODO DIAGRAM
 
 The locations of the cuts that result in the ends $1_b$ and $2_b$ as well as
 $3_b$ and $4_b$ are, in general, not very interesting.
 It is merely a location on the knot that can be kept on the outside while
-untangling the top-closure of the tangle.
+untangling the top closure of the tangle.
 We do note that in the symmetric union, the locations of the two important cuts
 can always be obtained by deforming the knot (but preserving its symmetry) until
 one of the bridges appears above any crossings on the axis of symmetry.
