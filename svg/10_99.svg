@@ -129,7 +129,7 @@
        y="263.09055" />
     <path
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 449.25795,789.27164 c 0.51671,-136.1943 38.44471,-103.0743 39.61927,-153.14225"
+       d="M 449.25795,789.27164 C 449.77466,649.1739 487.70266,685.25655 488.87722,636.12939"
        id="path13099"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
