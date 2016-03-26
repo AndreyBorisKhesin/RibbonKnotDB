@@ -1,0 +1,76 @@
+%% Creator: Inkscape 0.91_64bit, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'question.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{597.77887975bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.40836317)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{question.pdf}}%
+    \put(0.2011699,0.42050149){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{question.pdf}}%
+    \put(0.46556771,0.71503795){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{⇒}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{question.pdf}}%
+    \put(0.05546058,1.02593159){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
+    \put(0.17335604,1.02593159){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0.34888671,1.02593159){\color[rgb]{0,0,0}\rotatebox{-180}{\makebox(0,0)[lb]{\smash{R}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{question.pdf}}%
+    \put(0.77190992,1.0296896){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T}}}%
+    \put(0.4763931,1.02964978){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{=}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{question.pdf}}%
+    \put(0.05546056,0.39391871){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
+    \put(0.17335599,0.39391871){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0.34888667,0.39391871){\color[rgb]{0,0,0}\rotatebox{-180}{\makebox(0,0)[lb]{\smash{R}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{question.pdf}}%
+    \put(0.05764077,0.32157718){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
+    \put(0.1755362,0.32157718){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0.3510669,0.32157718){\color[rgb]{0,0,0}\rotatebox{-180}{\makebox(0,0)[lb]{\smash{R}}}}%
+    \put(0.4773104,0.32546878){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{=}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{question.pdf}}%
+    \put(0.77005164,0.37745395){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{U}}}%
+    \put(0.46556771,0.68873681){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{⇒}}}}%
+  \end{picture}%
+\endgroup%
