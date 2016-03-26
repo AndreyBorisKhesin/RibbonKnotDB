@@ -1,10 +1,10 @@
 \documentclass[twoside]{article}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{capt-of}
 \usepackage{caption}
-\captionsetup{labelformat=empty,labelsep=none}
 \usepackage[strict]{changepage}
 \usepackage{chngcntr}
 \usepackage[americanvoltage, siunitx]{circuitikz}
@@ -22,13 +22,18 @@
 \usepackage{multirow}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
-\usepgfplotslibrary{external}
 \usepackage{siunitx}
 \usepackage{tabu}
 \usepackage{tikz}
+\usepackage{xspace}
+
+\captionsetup{labelformat=empty,labelsep=none}
+\usepgfplotslibrary{external}
+\def\svgwidth{\columnwidth}
 \usetikzlibrary{positioning,matrix,shapes,chains,arrows}
 \tikzexternalize[prefix=precompiled_figures/]
-\usepackage{xspace}
+
+\newcommand\svg[1]{{\centering\input{#1.pdf_tex}}}
 
 % Indent
 \setlength{\parindent}{0.3in}
