@@ -49,9 +49,9 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.91401129)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{tangle.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/tangle.pdf}}%
     \put(0.18551345,0.85){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$1_t$~~~~~~~~~~~$2_t$~~~\dots$(n-1)_t$~~~~~~$n_t$}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{tangle.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{diagrams/tangle.pdf}}%
     \put(0.46531125,0.42958942){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\fontsize{24pt}{1em}\selectfont R}}}%
     \put(0.18551345,0.05){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{$1_b$~~~~~~~~~~~$2_b$~~\dots$(n-1)_b$~~~~~~$n_b$}}}%
   \end{picture}%

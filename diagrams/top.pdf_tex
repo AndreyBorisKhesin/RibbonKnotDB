@@ -48,14 +48,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.87872691)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{top.pdf}}%
-    \put(0.10515003,0.85084546){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1        2         3               ...        (2n-2)   (2n-1)  (2n)}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{top.pdf}}%
-    \put(0.124859,0.83829213){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{t              t               t                                                     t                   t            t}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{top.pdf}}%
-    \put(0.46290316,0.38470495){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
-    \put(0.10262168,0.01291935){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1        2         3               ...        (2n-2)   (2n-1)  (2n)}}}%
-    \put(0.12233068,0.000366){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{b             b               b                                                    b                 b           b}}}%
+  \begin{picture}(1,0.9)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/top.pdf}}%
+    \put(0.11,0.8546){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\fontsize{9pt}{1em}\selectfont$1_t$~~~~~$2_t$~~~~~~~~~$3_t$~~~~~~~~~~~\dots~~~$(2n-2)_t$~$(2n-1)_t$~$(2n)_t$}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{diagrams/top.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{diagrams/top.pdf}}%
+    \put(0.46316,0.35495){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\fontsize{24pt}{1em}\selectfont R}}}%
+    \put(0.11,0.0003184546){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\fontsize{9pt}{1em}\selectfont$1_b$~~~~~$2_b$~~~~~~~~$3_b$~~~~~~~~~~~\dots~~$(2n-2)_b$~$(2n-1)_b$~$(2n)_b$}}}%
   \end{picture}%
 \endgroup%

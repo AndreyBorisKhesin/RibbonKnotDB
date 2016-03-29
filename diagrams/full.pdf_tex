@@ -49,11 +49,9 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.92155953)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{full.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/full.pdf}}%
     \put(0.46290316,0.42800698){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
-    \put(0.10468754,0.89367808){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1        2         3               ...        (2n-2)   (2n-1)  (2n)}}}%
-    \put(0.12439654,0.88112475){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{t              t               t                                                     t                   t            t}}}%
+    \put(0.10468754,0.849367808){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\fontsize{9pt}{1em}\selectfont $1_t$~~~~~~$2_t$~~~~~~~$3_t$~~~~~~~~~~~~~\dots        $(2n-2)_t$   $(2n-1)_t$  $(2n)_t$}}}%
     \put(0.10215928,0.01291935){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1        2         3               ...        (2n-2)   (2n-1)  (2n)}}}%
-    \put(0.1218682,0.000366){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{b             b               b                                                    b                 b           b}}}%
   \end{picture}%
 \endgroup%
