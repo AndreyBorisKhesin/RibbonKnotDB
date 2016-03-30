@@ -32,15 +32,21 @@ expressed as symmetric unions TODO SOURCE.
 A tangle is a collection of joined crossings with a certain number of ``loose
 ends'' sticking out.
 A tangle with $n$ strands will have $2n$ such ends sticking out.
-For convenience, a tangle is drawn as a braid, with $n$ ends along the top and
-$n$ ends along the bottom where the order of the strands along the top is the
-same as along the bottom.
+For convenience, a tangle is drawn as a pure braid, with $n$ ends along the top
+and $n$ ends along the bottom where the order of the strands along the top is
+the same as along the bottom.
 In other words, if one were to follow each strand in a tangle, they would end up
 exactly below the point at which they started.
 Let the tops of the strands be denoted by $1_t,~2_t$, ..., $n_t$, and the
 bottoms  by $1_b,~2_b$, ..., $n_b$.
 
 \svg{diagrams/tangle}
+\papercaption{In a tangle, the ends do not have to be drawn along the top and
+bottom.
+This is done for convenience.
+In practice, the $2n$ ends could be located anywhere on the perimeter.
+Here the central $R$ represents a knot that shows that the strands are tangled,
+but link up with their corresponding ends as shown.}
 
 A closure of a tangle is a manner of stitching the ends of the tangle together
 to reduce the resulting number of strands.
@@ -90,7 +96,10 @@ If a tangle $T$ with $n$ strands with $2n$ ends along the top can be top closed
 $\exists$ a tangle $T'$ consisting of $2n$ strands with $2n$ ends along the top
 and $2n$ ends along the bottom such that applying the stitchings$(1_b,~2_b),~
 (2_t,~3_t),~(3_b~4_b),~...,~((2n-2)_t,~(2n-1)_t),~((2n-1)_b,~(2n)_b)$ (just the
-bottom part of the full closure) results in $T$. TODO DIAGRAM
+bottom part of the full closure) results in $T$.
+
+\svg{diagrams/lemma}
+
 \end{paperlemma}
 \begin{proof}[Proof of Lemma]
 Once $T$ is closed, a continuous deformation of three dimensional space turns it
@@ -110,7 +119,9 @@ component in one large tangle.
 The knot can be deformed until the ribbon connects the tops of the knot's
 components, making sure the ends of the ribbons are above the upper boundary of
 the tangle.
-TODO DIAGRAM
+
+\svg{diagrams/lowered}
+
 It is important to note that everything above the upper boundary of the tangle
 is exactly as described while the ribbons inside the tangle can have any number
 of crossings.
@@ -120,12 +131,16 @@ the knot to end up fully inside the tangle.
 This means that any ribbon knot with $n$ components can be transformed into a
 tangle with $2n$ ends along the top that has been top closed with $n-1$ ribbon
 bridges between each of the closing loops.
-TODO DIAGRAM
+
+\svg{diagrams/twisted}
+
 Here the knot in the tangle is completely different and all the crossings are in
 the components of the knot, as opposed to the ribbon.
 This is equivalent to applying just the top part of the full closure to the
 tangle and then applying the closure $(1_t,~(2n)_t)$.
-TODO DIAGRAM
+
+\svg{diagrams/complete}
+
 We note that since any ribbon knot is a series of unzipped strands connecting
 subsequent components of the unlink, then the removal of these strands will
 result in the unlink.
@@ -134,7 +149,9 @@ removing the ribbons would also result in the unlink.
 We also note that in any situation, removing a ribbon is equivalent to unzipping
 it, cutting both strands of the ribbon, then stitching each strand to the one it
 was unzipped from.
-TODO DIAGRAM
+
+\svg{diagrams/cut}
+
 Removing the ribbons from our deformed ribbon knot would therefore be identical
 to applying the top closure to its tangle.
 This means that the tangle that makes up the bulk of the knot satisfies the
@@ -157,7 +174,9 @@ can always be obtained by deforming the knot (but preserving its symmetry) until
 one of the bridges appears above any crossings on the axis of symmetry.
 Then the knot is cut just above this bridge along the first strands that cross
 it, moving out from the middle of the bridge.
-TODO DIAGRAM
+
+\svg{diagrams/question}
+
 TODO QUESTION
 \papersection{Database}
 Here we attempt to publish a database of the planar diagram crossing information
@@ -168,14 +187,16 @@ $10_{123},~10_{129},~10_{137},~10_{140},~10_{153}$, and $10_{155}$.
 This notation consists of a list of crossings of the form $X_{a,b,c,d}$ which
 labels the four strands in a crossing from the lower incoming strand and
 continues counterclockwise.
-TODO DIAGRAM
+
+\svg{diagrams/crossing}
 
 The knots are encoded as they appear in TODO FIGURE NUMBER.
 The tangle information consists of the list of segments of the knot (before any
 stitching between crossings is done) of each strand of the tangle.
 A strand in a crossing will carry the number of the knot segment going into it.
-Here we present TODO KNOT as an example.
-TODO DIAGRAM
+Here we present knot $6_1$ as an example.
+
+\svg{diagrams/example}
 
 The full database may be accessed at the following URL.
 TODO URL
