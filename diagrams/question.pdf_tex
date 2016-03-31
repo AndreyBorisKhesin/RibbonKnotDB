@@ -49,28 +49,6 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,1.40836317)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{question.pdf}}%
-    \put(0.2011699,0.42050149){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{question.pdf}}%
-    \put(0.46556771,0.71503795){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{⇒}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{question.pdf}}%
-    \put(0.05546058,1.02593159){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
-    \put(0.17335604,1.02593159){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
-    \put(0.34888671,1.02593159){\color[rgb]{0,0,0}\rotatebox{-180}{\makebox(0,0)[lb]{\smash{R}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=4]{question.pdf}}%
-    \put(0.77190992,1.0296896){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T}}}%
-    \put(0.4763931,1.02964978){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{=}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{question.pdf}}%
-    \put(0.05546056,0.39391871){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
-    \put(0.17335599,0.39391871){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
-    \put(0.34888667,0.39391871){\color[rgb]{0,0,0}\rotatebox{-180}{\makebox(0,0)[lb]{\smash{R}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=6]{question.pdf}}%
-    \put(0.05764077,0.32157718){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
-    \put(0.1755362,0.32157718){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
-    \put(0.3510669,0.32157718){\color[rgb]{0,0,0}\rotatebox{-180}{\makebox(0,0)[lb]{\smash{R}}}}%
-    \put(0.4773104,0.32546878){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{=}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=7]{question.pdf}}%
-    \put(0.77005164,0.37745395){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{U}}}%
-    \put(0.46556771,0.68873681){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{⇒}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/question.pdf}}%
   \end{picture}%
 \endgroup%

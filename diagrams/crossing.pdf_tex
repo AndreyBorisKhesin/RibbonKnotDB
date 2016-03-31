@@ -49,12 +49,6 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,1.10866937)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{crossing.pdf}}%
-    \put(-0.00507433,0.25217484){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{a}}}%
-    \put(0.24015963,1.0098243){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{d}}}%
-    \put(0.94147148,0.78897219){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{c}}}%
-    \put(0.75634949,0.09671339){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{b}}}%
-    \put(0.42528163,0.01580224){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{a,b,c,d}}}%
-    \put(0.32752557,0.03457029){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{X}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/crossing.pdf}}%
   \end{picture}%
 \endgroup%

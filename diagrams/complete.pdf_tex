@@ -49,8 +49,6 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,0.73388493)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{complete.pdf}}%
-    \put(0.47279833,0.0631764){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{R}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{complete.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/complete.pdf}}%
   \end{picture}%
 \endgroup%

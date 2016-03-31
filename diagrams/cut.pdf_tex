@@ -49,12 +49,6 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,1.22771366)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{cut.pdf}}%
-    \put(0.20040196,0.28585909){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0.45932127,0.26658939){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{→}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{cut.pdf}}%
-    \put(0.46032616,0.83059827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{→}}}%
-    \put(0.18062981,0.61004959){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{→}}}}%
-    \put(0.81937018,0.52768718){\color[rgb]{0,0,0}\rotatebox{90}{\makebox(0,0)[lb]{\smash{→}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/cut.pdf}}%
   \end{picture}%
 \endgroup%

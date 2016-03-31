@@ -49,17 +49,6 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,1.22648118)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{lemma.pdf}}%
-    \put(0.17746425,0.82569006){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T             =            U}}}%
-    \put(0.20120466,0.28557212){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{lemma.pdf}}%
-    \put(0.17646037,0.25898474){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{T'            =            T}}}%
-    \put(0.05066441,1.03632461){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1       2          ...      (2n-1)  (2n)}}}%
-    \put(0.06175449,1.03101726){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{t              t                                             t             t}}}%
-    \put(0.64564423,1.03630441){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1       2          ...      (2n-1)  (2n)}}}%
-    \put(0.65673431,1.03099706){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{t              t                                             t             t}}}%
-    \put(0.05115089,0.09146949){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{1       2          ...      (2n-1)  (2n)}}}%
-    \put(0.06224098,0.08616215){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{b             b                                            b            b}}}%
-    \put(0.46665206,0.61856045){\color[rgb]{0,0,0}\rotatebox{-90}{\makebox(0,0)[lb]{\smash{⇒}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/lemma.pdf}}%
   \end{picture}%
 \endgroup%
