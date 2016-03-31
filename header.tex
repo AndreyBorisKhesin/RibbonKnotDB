@@ -246,12 +246,11 @@ $\begin{array}{r}
 
 %Figure counter
 \newcounter{paperfigurecounter}
-\newcommand{\papercaption}[1]{
-\vspace{-24pt}
-\bgroup
-\stepcounter{paperfigurecounter}
+\newcommand{\papercaption}[2]{\vspace{-24pt}
+\bgroup\stepcounter{paperfigurecounter}
 \captionof{figure}{\fontsize{9pt}{9pt}\selectfont
-\hspace{0.3in}Fig \arabic{paperfigurecounter}. #1}\egroup}
+\hspace{0.3in}Fig \arabic{paperfigurecounter}. #1}\egroup\expandafter\edef
+\csname fig#2\endcsname{Fig \arabic{paperfigurecounter}.\noexpand\xspace}}
 
 \newcommand{\paperaxis}[9]
 {title=#1,
@@ -268,16 +267,13 @@ x tick label style={
 fixed,
 fixed zerofill,
 precision=#8,
-/tikz/.cd
-},
+/tikz/.cd},
 y tick label style={
 /pgf/number format/.cd,
 fixed,
 fixed zerofill,
 precision=#9,
-/tikz/.cd
-}
-}
+/tikz/.cd}}
 \newcommand{\paperaxisxlabel}[2]{
 xlabel=\fontsize{10pt}{1em}\selectfont#1$(#2)\rightarrow$}
 \newcommand{\paperaxisylabel}[2]{
@@ -288,13 +284,11 @@ ylabel=\fontsize{10pt}{1em}\selectfont#1$(#2)\rightarrow$}
 (#1,#4)
 (#3,#4)
 (#3,#2)
-(#1,#2)
-};}
+(#1,#2)};}
 
 \newenvironment{papergraph}{
 \begin{tikzpicture}
-\begin{axis}
-}
+\begin{axis}}
 {\end{axis}
 \end{tikzpicture}}
 
