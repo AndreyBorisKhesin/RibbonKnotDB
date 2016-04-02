@@ -187,16 +187,16 @@ Question \thesubsubsection\noexpand\xspace}}{\end{question}}}
 \stepcounter{paperequationcounter}
 \mbox{}\vspace{-0.75em}
 \begin{equation*}
-#1
+#2
 \tag*{\fontsize{12pt}{1em}\selectfont
 $\begin{array}{r}
 \cr{\text{[\arabic{paperequationcounter}]}}
-\cr{\fontsize{9pt}{1em}\selectfont\textit{\ifx\\#2\\~\else(\fi#2\ifx\\#2\\~
+\cr{\fontsize{9pt}{1em}\selectfont\textit{\ifx\\#3\\~\else(\fi#3\ifx\\#3\\~
 \else)\fi}}
 \end{array}$}
 \end{equation*}
 }
-\expandafter\edef\csname eq#3\endcsname{[\arabic{paperequationcounter}]\noexpand
+\expandafter\edef\csname eq#1\endcsname{[\arabic{paperequationcounter}]\noexpand
 \xspace}}
 
 % Where
@@ -249,8 +249,8 @@ $\begin{array}{r}
 \newcommand{\papercaption}[2]{\vspace{-24pt}
 \bgroup\stepcounter{paperfigurecounter}
 \captionof{figure}{\fontsize{9pt}{9pt}\selectfont
-\hspace{0.3in}Fig \arabic{paperfigurecounter}. #1}\egroup\expandafter\edef
-\csname fig#2\endcsname{Fig \arabic{paperfigurecounter}.\noexpand\xspace}}
+\hspace{0.3in}Fig \arabic{paperfigurecounter}. #2}\egroup\expandafter\edef
+\csname fig#1\endcsname{Fig \arabic{paperfigurecounter}.\noexpand\xspace}}
 
 \newcommand{\paperaxis}[9]
 {title=#1,
