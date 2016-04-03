@@ -8,6 +8,7 @@
 \usepackage{chngcntr}
 \usepackage[americanvoltage,siunitx]{circuitikz}
 \usepackage{color,colortbl}
+\usepackage{etoolbox}
 \usepackage{fancyhdr}
 \usepackage[T1]{fontenc}
 \usepackage{gensymb}
@@ -26,12 +27,16 @@
 \usepackage{tikz}
 \usepackage{xspace}
 
+\patchcmd{\thebibliography}{\section*{\refname}}{\vspace{-1em}}{}{}
+
 \captionsetup{labelformat=empty,labelsep=none}
 \usepgfplotslibrary{external}
 \usetikzlibrary{positioning,matrix,shapes,chains,arrows}
 \tikzexternalize[prefix=precompiled_figures/]
 
-\newcommand\svg[1]{\def\svgwidth{\columnwidth}{\centering\input{#1.pdf_tex}}}
+\newcommand\svg[1]{\def\svgwidth{\columnwidth}
+\vspace{12pt}
+{\centering\input{#1.pdf_tex}}}
 
 % Indent
 \setlength{\parindent}{0.3in}
