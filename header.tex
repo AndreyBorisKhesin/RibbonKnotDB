@@ -1,5 +1,4 @@
 \documentclass[twoside]{article}
-
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -7,7 +6,7 @@
 \usepackage{caption}
 \usepackage[strict]{changepage}
 \usepackage{chngcntr}
-\usepackage[americanvoltage, siunitx]{circuitikz}
+\usepackage[americanvoltage,siunitx]{circuitikz}
 \usepackage{color,colortbl}
 \usepackage{fancyhdr}
 \usepackage[T1]{fontenc}
@@ -248,7 +247,7 @@ $\begin{array}{r}
 \newcounter{paperfigurecounter}
 \newcommand{\papercaption}[2]{\vspace{-24pt}
 \bgroup\stepcounter{paperfigurecounter}
-\captionof{figure}{\fontsize{9pt}{9pt}\selectfont
+\captionof{figure}{\fontsize{9pt}{1em}\selectfont
 \hspace{0.3in}Fig \arabic{paperfigurecounter}. #2}\egroup\expandafter\edef
 \csname fig#1\endcsname{Fig \arabic{paperfigurecounter}.\noexpand\xspace}}
 
