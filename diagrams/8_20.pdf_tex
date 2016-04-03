@@ -49,6 +49,6 @@
   \global\let\svgscale\undefined%
   \makeatother%
   \begin{picture}(1,1.10011738)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{8_20.pdf}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/8_20.pdf}}%
   \end{picture}%
 \endgroup%
