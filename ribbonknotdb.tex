@@ -1,11 +1,12 @@
 \input{header}
+\diagrams
 \theorems
 \begin{document}
 \papertitle{A Database of Ribbon Knots in Tangle Form}
-\paperauthor{D}{Bar-Natan}{}
-\paperauthor{A}{Khesin}{}
+%\paperauth{D}{Bar-Natan}{}
+\paperauth{A}{Khesin}{}
 \paperdate{TODO DATE}
-\begin{paperabstract}
+\begin{paperabs}
 All 21 ribbon knots with 10 crossings or fewer can be expressed as symmetric
 unions.
 These symmetric unions can be cut in four places to create tangles that can be
@@ -15,9 +16,9 @@ such a tangle.
 Conversely, every such tangle can be closed to a ribbon knot.
 The tangles for the first 21 knots as well as their information in planar
 diagram notation has been calculated.
-\end{paperabstract}
+\end{paperabs}
 \begin{paper}
-\papersection{Introduction}
+\papersec{Introduction}
 
 A ribbon knot is a knot that contains only ribbon singularities.
 A ribbon singularity occurs when the self-intersections of the disk come in
@@ -36,7 +37,8 @@ However, at this time of this writing it is not yet known whether every ribbon
 knot can be expressed as a symmetric union.
 It has been shown that all 21 knots with 10 crossings or fewer can be expressed
 as symmetric unions (\cite{oneknot} and \cite{manyknots}).
-\papersection{Tangles}
+
+\papersec{Tangles}
 
 A tangle is a collection of crossings with a certain number of loose ends.
 A tangle with $n$ strands will have $2n$ such ends.
@@ -48,8 +50,9 @@ exactly below the point at which they started.
 Let the tops of the strands be denoted by $1_t$, $2_t$, \dots, $n_t$, and the
 bottoms  by $1_b$, $2_b$, \dots, $n_b$.
 
-\svg{diagrams/tangle}
-\papercaption{Tangle}{In a tangle, the ends do not have to be drawn along the
+\svgc{tangle}
+
+\papercap{Tangle}{In a tangle, the ends do not have to be drawn along the
 top and bottom of the tangle.
 This is merely done for convenience.
 In practice, the $2n$ ends could be located anywhere on the perimeter.
@@ -62,8 +65,9 @@ For a tangle with $2n$ strands, let the top closure of the tangle be defined as
 the closure that stitches together the pairs $(1_t$, $2_t)$, $(3_t$, $4_t)$,
 \dots, $((2n-1)_t$, $(2n)_t)$ to create $n$ strands.
 
-\svg{diagrams/top}
-\papercaption{Top}{This shows how a tangle with $2n$ strands can be top closed.
+\svgc{top}
+
+\papercap{Top}{This shows how a tangle with $2n$ strands can be top closed.
 This leaves every bottom end open.
 Now, this tangle has only $n$ strands instead of $2n$.
 Note that only 4 of the $n$ closures are shown here.
@@ -75,8 +79,9 @@ the closure that stitches together the pairs $(1_b$, $2_b)$, $(2_t$, $3_t)$,
 $(3_b$, $4_b)$, \dots, $((2n-2)_t$, $(2n-1)_t)$, $((2n-1)_b$, $(2n)_b)$ to
 create 1 strand.
 
-\svg{diagrams/full}
-\papercaption{Full}{This shows how a tangle with $2n$ strands can be full
+\svgc{full}
+
+\papercap{Full}{This shows how a tangle with $2n$ strands can be full
 closed.
 It is important to note that this reproduces the top closure along the bottom,
 and closes the top similarly, but offset by 1 strand.
@@ -94,12 +99,12 @@ If $R$ is trivial, then in the top closure, the strands create an untangle which
 can be turned into the unlink by closing the strands along the bottom as
 depicted in the full closure.
 
-\begin{papertheorem}{Ribbon}
+\begin{paperthm}{Ribbon}
 A knot $K$ is ribbon$\iff\exists$ a tangle $T$ with $2n$ strands where the
 top closure of $T$ creates the trivial tangle with $n$ strands, while
 full closure of $T$ creates a tangle with 1 strand, identical to knot $K$ when
 $(1_t$, $(2n)_t)$ is joined.
-\end{papertheorem}
+\end{paperthm}
 \begin{proof}
 If the top closure of a tangle $T$ results in $n$ trivial strands that can be
 untangled, that means that among the crossings in the top closure of $T$, there
@@ -116,7 +121,7 @@ ribbon.
 
 Conversely, consider a tangle $T$ with $n$ strands and $2n$ ends along the top
 numbered $1_t$ to $(2n)_t$.
-\begin{paperlemma}{Tangles}
+\begin{paperlem}{Tangles}
 If a tangle $T$ with $n$ strands with $2n$ ends along the top can be top closed
 with $n$ stitchings to create the unlink consisting of $n$ unknots, then
 $\exists$ a tangle $T'$ consisting of $2n$ strands with $2n$ ends along the top
@@ -124,14 +129,15 @@ and $2n$ ends along the bottom such that applying the just the bottom part of
 the full closure, consisting of the stitchings $(1_b$, $2_b)$, $(3_b$, $4_b)$,
 \dots, $((2n-1)_b$, $(2n)_b)$, results in $T$.
 
-\svg{diagrams/lemma}
-\papercaption{Lemma}{The top equality shows that the tangle $T$ can be top
+\svgc{lemma}
+
+\papercap{Lemma}{The top equality shows that the tangle $T$ can be top
 closed to form the unlink $U$.
 The implication states that there then must exist a tangle $T'$ that can be
 closed along the bottom as shown to create $T$.
 The break in the central top and bottom closures represents the presence of more
 closed strands.}
-\end{paperlemma}
+\end{paperlem}
 \begin{proof}[Proof of Lemma]
 Once $T$ is closed, a continuous deformation of three dimensional space turns it
 into the unlink by assumption.
@@ -153,8 +159,9 @@ The knot can be deformed until the ribbon connects the tops of the knot's
 components, making sure the ends of the ribbons are above the upper boundary of
 the tangle.
 
-\svg{diagrams/lowered}
-\papercaption{Lowered}{The intersections of the ribbon and the components of the
+\svgc{lowered}
+
+\papercap{Lowered}{The intersections of the ribbon and the components of the
 ribbon knot can be lowered into the enclosed section labeled $R$.
 The components of the knots are depicted exactly as they are while the
 intersections of the ribbons and the components are not shown.
@@ -172,8 +179,9 @@ This means that any ribbon knot with $n$ components can be transformed into a
 tangle with $2n$ ends along the top that has been top closed with $n-1$ ribbon
 bridges between each of the closing loops.
 
-\svg{diagrams/twisted}
-\papercaption{Twisted}{This diagram is very similar to \figLowered but the knot
+\svgc{twisted}
+
+\papercap{Twisted}{This diagram is very similar to \figLowered but the knot
 it represents is very different.
 Here, every ribbon, originally twisted with the components of the ribbon knot,
 was dragged to the position it occupies here, dragging the strands of the
@@ -191,8 +199,9 @@ between components of the knot, as opposed to between ribbons.
 This is equivalent to applying just the top part of the full closure to the
 tangle and then applying the stitching $(1_t$, $(2n)_t)$.
 
-\svg{diagrams/complete}
-\papercaption{Complete}{In this diagram, nothing within $R$ changed from
+\svgc{complete}
+
+\papercap{Complete}{In this diagram, nothing within $R$ changed from
 \figTwisted.
 Everything above $R$ was smoothly deformed to illustrate that the resulting
 strands above $R$ are simply a top closure and the stitching $(1_t$,
@@ -207,8 +216,9 @@ Note that in any situation, removing a ribbon is equivalent to unzipping
 it, cutting both strands of the ribbon, then stitching each strand to the one it
 was unzipped from.
 
-\svg{diagrams/cut}
-\papercaption{Cut}{If a ribbon connecting two strands were to be entirely
+\svgc{cut}
+
+\papercap{Cut}{If a ribbon connecting two strands were to be entirely
 removed, this would be equivalent to severing both strands of the ribbon and
 reattaching each strand to the neighbouring that it was not attached to before.}
 
@@ -225,7 +235,8 @@ Therefore $T'$ can be top closed to create the unlink and by \figComplete, it
 can be full closed to create the original knot.
 Thus, $T'$ matches the conditions of the tangle described in \thmRibbon.
 \end{proof}
-\papersection{Symmetric Unions}
+
+\papersec{Symmetric Unions}
 
 Here is a table of all 21 ribbon knots with 10 crossings or fewer in tangle
 form.
@@ -237,27 +248,27 @@ the extra stitching of $(1_t$, $4_t)$.
 \setlength{\tabcolsep}{12pt}
 \fontsize{12pt}{1em}\selectfont
 \begin{tabular}{cccc}
-\scalebox{0.17}{\svg{diagrams/6_1}}&\scalebox{0.17}{\svg{diagrams/8_8}}&
-\scalebox{0.17}{\svg{diagrams/8_9}}&\scalebox{0.17}{\svg{diagrams/8_20}}\\
+\svgsize{6_1}{0.17\columnwidth}&\svgsize{8_8}{0.17\columnwidth}&
+\svgsize{8_9}{0.17\columnwidth}&\svgsize{8_20}{0.17\columnwidth}\\
 $6_1$&$8_8$&$8_9$&$8_{20}$\\
 &&&\\
-\scalebox{0.17}{\svg{diagrams/9_27}}&\scalebox{0.17}{\svg{diagrams/9_41}}&
-\scalebox{0.17}{\svg{diagrams/9_46}}&\scalebox{0.17}{\svg{diagrams/10_3}}\\
+\svgsize{9_27}{0.17\columnwidth}&\svgsize{9_41}{0.17\columnwidth}&
+\svgsize{9_46}{0.17\columnwidth}&\svgsize{10_3}{0.17\columnwidth}\\
 $9_{27}$&$9_{41}$&$9_{46}$&$10_3$\\
 &&&\\
-\scalebox{0.17}{\svg{diagrams/10_22}}&\scalebox{0.17}{\svg{diagrams/10_35}}&
-\scalebox{0.17}{\svg{diagrams/10_42}}&\scalebox{0.17}{\svg{diagrams/10_48}}\\
+\svgsize{10_22}{0.17\columnwidth}&\svgsize{10_35}{0.17\columnwidth}&
+\svgsize{10_42}{0.17\columnwidth}&\svgsize{10_48}{0.17\columnwidth}\\
 $10_{22}$&$10_{35}$&$10_{42}$&$10_{48}$\\
 &&&\\
-\scalebox{0.17}{\svg{diagrams/10_75}}&\scalebox{0.17}{\svg{diagrams/10_87}}&
-\scalebox{0.17}{\svg{diagrams/10_99}}&\scalebox{0.17}{\svg{diagrams/10_123}}\\
+\svgsize{10_75}{0.17\columnwidth}&\svgsize{10_87}{0.17\columnwidth}&
+\svgsize{10_99}{0.17\columnwidth}&\svgsize{10_123}{0.17\columnwidth}\\
 $10_{75}$&$10_{87}$&$10_{99}$&$10_{123}$\\
 &&&\\
-\scalebox{0.17}{\svg{diagrams/10_129}}&\scalebox{0.17}{\svg{diagrams/10_137}}&
-\scalebox{0.17}{\svg{diagrams/10_140}}&\scalebox{0.17}{\svg{diagrams/10_153}}\\
+\svgsize{10_129}{0.17\columnwidth}&\svgsize{10_137}{0.17\columnwidth}&
+\svgsize{10_140}{0.17\columnwidth}&\svgsize{10_153}{0.17\columnwidth}\\
 $10_{129}$&$10_{137}$&$10_{140}$&$10_{153}$\\
 &&&\\
-\scalebox{0.17}{\svg{diagrams/10_155}}&&&\\
+\svgsize{10_155}{0.17\columnwidth}&&&\\
 $10_{155}$&&&
 \end{tabular}
 
@@ -275,8 +286,9 @@ closest to the axis.
 \newsavebox{\mirrorR}
 \sbox{\mirrorR}{\reflectbox{\fontsize{9pt}{1em}\selectfont$R$}}
 
-\svg{diagrams/question}
-\papercaption{Question}{Here, $R$ represents a tangle whose mirror image is
+\svgc{question}
+
+\papercap{Question}{Here, $R$ represents a tangle whose mirror image is
 \usebox{\mirrorR}.
 They are connected by $X$, a series of crossings and two bridges.
 $U$ is the unlink.
@@ -289,7 +301,8 @@ For any ribbon knot in its symmetric union presentation, can the location of the
 cuts between $(1_t$, $4_t)$ and $(2_t$, $3_t)$ be generalized to be along the
 two strands that are first to cross one of the 2 bridges of the symmetric union?
 \end{paperquestion}
-\papersection{Database}
+
+\papersec{Database}
 
 A database of the planar diagram crossing information of the 21 ribbon
 knots has been created.
@@ -297,9 +310,9 @@ This notation consists of a list of crossings of the form $X_{a,b,c,d}$ which
 labels the four strands in a crossing from the lower incoming strand and
 continues counterclockwise.
 
-~~~~~~~~~~~\scalebox{0.5}{\svg{diagrams/crossing}}
-\vspace{12pt}
-\papercaption{Crossing}{This shows a typical crossing.
+\svgsize{crossing}{0.5\columnwidth}
+\vspace{1em}
+\papercap{Crossing}{This shows a typical crossing.
 The numbering stars from the lower incoming segment and proceeds
 counterclockwise.
 Thus, this crossing would be labeled $X_{a,b,c,d}$.}
@@ -310,8 +323,9 @@ strand of the tangle before any stitching between crossings is done.
 A strand in a crossing will carry the number of the knot segment going into it.
 Here is knot $6_1$ as an example.
 
-\svg{diagrams/example}
-\papercaption{Example}{This depicts all the segments of knot $6_1$ as numbered.
+\svgc{example}
+
+\papercap{Example}{This depicts all the segments of knot $6_1$ as numbered.
 The numbering always starts from strand 1 and proceeds along the knot.
 The planar diagram crossing information of $6_1$ is $X_{2,8,3,7}$
 $X_{5,14,6,15}$ $X_{8,20,9,19}$ $X_{3,10,4,11}$ $X_{11,6,12,7}$ $X_{15,4,16,5}$
@@ -321,7 +335,9 @@ Meanwhile, the tangle information of $6_1$ is \{\{1, 2, 3, 4, 5, 6, 7, 8\},
 \{12, 11, 10, 9\}, \{13, 14, 15, 16\}, \{22, 21, 20, 19, 18, 17\}\}.}
 
 The full database may be accessed at TODO URL.
-\papersection{References}
+
+\papersec{References}
+
 \begin{thebibliography}{}
 \bibitem{oneknot}
 Lamm, Christoph.
@@ -332,5 +348,8 @@ Lamm, Christoph.
 \textit{Symmetric unions and ribbon knots.}
 Osaka J. Math. 37 (2000), no. 3, 537--550
 \end{thebibliography}
+
+\papersec{Acknowledgements}
+
 \end{paper}
 \end{document}
