@@ -1,6 +1,6 @@
 %% Creator: Inkscape 0.91_64bit, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'complete.pdf' (pdf, eps, ps)
+%% Accompanies image file 'proof.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{598.37955134bp}%
+    \setlength{\unitlength}{597.675592bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,7 +48,7 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.7224684)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/complete.pdf}}%
+  \begin{picture}(1,0.92155953)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/proof.pdf}}%
   \end{picture}%
 \endgroup%
