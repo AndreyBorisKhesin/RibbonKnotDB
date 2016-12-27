@@ -7,15 +7,16 @@
 \paperauth{A}{Khesin}{}
 \paperdate{TODO DATE}
 \begin{paperabs}
-All 21 ribbon knots with 10 crossings or fewer can be expressed as symmetric
-unions.
-These symmetric unions can be cut in four places to create tangles that can be
-closed to produce the unlink.
-This can be generalized to the point that any ribbon knot can be turned into
-such a tangle.
-Conversely, every such tangle can be closed to a ribbon knot.
-The tangles for the first 21 knots as well as their information in planar
-diagram notation has been calculated.
+There are 21 ribbon knots with 10 crossings or fewer.
+All 21 of these knots can be expressed as symmetric unions (see \cite{many} and
+\cite{one}).
+We show that for each of these ribbon knots, we can find a tangle with 4 strands
+that satisfies the property that a specific closure of that tangle results in
+the corresponding knot while a second closure results in the 2-component unlink.
+We show that a tangle satisfying similar conditions exists for any ribbon knot
+and that the knot corresponding to such a tangle is always a ribbon knot.
+We also provide diagrams and the tangle information of the first 21 ribbon
+knots.
 \end{paperabs}
 \begin{paper}
 \papersec{Introduction}
@@ -36,34 +37,34 @@ It is well known that any symmetric union is a ribbon knot.
 However, at this time of this writing it is not yet known whether every ribbon
 knot can be expressed as a symmetric union.
 It has been shown that all 21 knots with 10 crossings or fewer can be expressed
-as symmetric unions (\cite{oneknot} and \cite{manyknots}).
+as symmetric unions (\cite{one} and \cite{many}).
 
 \papersec{Tangles}
 
-A tangle is a collection of crossings with a certain number of loose ends.
+A \textit{tangle} is a collection of crossings with a certain number of loose
+ends.
 A tangle with $n$ strands will have $2n$ such ends.
 For convenience, a tangle is often drawn similarly to a pure braid, with $n$
 ends along the top and $n$ ends along the bottom where the order of the strands
 along the top is the same as along the bottom.
-In other words, if one were to follow each strand in a tangle, they would end up
-exactly below the point at which they started.
-Let the tops of the strands be denoted by $1_t$, $2_t$, \dots, $n_t$, and the
-bottoms  by $1_b$, $2_b$, \dots, $n_b$.
+In other words, if we were to follow each strand in a tangle, we would end up
+exactly below the point at which we started.
+We denote the tops of the strands by $1_t,~2_t,~\dots,~n_t$, and the
+bottoms  by $1_b,~2_b,~\dots,~n_b$.
 
-\svgc{tangle}
+\columnbreak
+
+\phantom.\vspace{1em}\svgc{tangle}
 
 \papercap{Tangle}{In a tangle, the ends do not have to be drawn along the
 top and bottom of the tangle.
 This is merely done for convenience.
 In practice, the $2n$ ends could be located anywhere on the perimeter.
-Here the central $R$ represents a knot that shows that the strands are tangled,
+Here the central R represents a knot that shows that the strands are tangled,
 but link up with their corresponding ends the way they do in a pure braid.}
 
-A closure of a tangle is a manner of stitching the ends of the tangle together
-to reduce the resulting number of strands.
-For a tangle with $2n$ strands, let the top closure of the tangle be defined as
-the closure that stitches together the pairs $(1_t$, $2_t)$, $(3_t$, $4_t)$,
-\dots, $((2n-1)_t$, $(2n)_t)$ to create $n$ strands.
+A \textit{closure} of a tangle is a manner of stitching the ends of the tangle
+together to reduce the resulting number of strands.
 
 \svgc{top}
 
@@ -74,10 +75,10 @@ Note that only 4 of the $n$ closures are shown here.
 Here the central $R$ represents a knot that shows that the strands are tangled,
 but link up with their corresponding ends the way they do in a pure braid.}
 
-For a tangle with $2n$ strands, let the full closure of the tangle be defined as
-the closure that stitches together the pairs $(1_b$, $2_b)$, $(2_t$, $3_t)$,
-$(3_b$, $4_b)$, \dots, $((2n-2)_t$, $(2n-1)_t)$, $((2n-1)_b$, $(2n)_b)$ to
-create 1 strand.
+\begin{paperdef}{TopClosure}{For a tangle with $2n$ strands, we define the
+\textit{top closure} of a tangle to be the closure that stitches together the
+pairs $(1_t,~2_t),~(3_t,~4_t),~\dots,~((2n-1)_t,~(2n)_t)$ to create
+$n$ strands (see \figTop).}\end{paperdef}
 
 \svgc{full}
 
@@ -90,44 +91,65 @@ Now, this tangle has only 1 strand instead of $2n$.
 Notice that only 8 of the $2n-1$ closures are shown here.
 The break in the central top closure represents the presence of more closed
 strands.
-Here the central $R$ represents a knot that shows that the strands are tangled,
+Here the central R represents a knot that shows that the strands are tangled,
 but link up with their corresponding ends the way they do in a pure braid.}
 
-Note that in both scenarios, one is effectively closing the strands along the
-bottom in the same manner.
-If $R$ is trivial, then in the top closure, the strands create an untangle which
-can be turned into the unlink by closing the strands along the bottom as
-depicted in the full closure.
+\begin{paperdef}{FullClosure}{For a tangle with $2n$ strands, we define the
+\textit{full closure} of a tangle be defined as the closure that stitches
+together the pairs $(1_b,~2_b),~(2_t,~3_t),~(3_b,~4_b)$, \dots,
+$((2n-2)_t,~(2n-1)_t),~((2n-1)_b,~(2n)_b)$ to create 1 strand (see
+\figFull).}\end{paperdef}
+
+If the inside of the tangle is trivial, then in the top closure, the strands
+create an untangle which we can turned into the unlink by closing the strands
+along the bottom as depicted in the full closure (see \figFull).
 
 \begin{paperthm}{Ribbon}
 A knot $K$ is ribbon$\iff\exists$ a tangle $T$ with $2n$ strands where the
-top closure of $T$ creates the trivial tangle with $n$ strands, while
-full closure of $T$ creates a tangle with 1 strand, identical to knot $K$ when
-$(1_t$, $(2n)_t)$ is joined.
+top closure of $T$ creates the untangle with $n$ strands, while the
+full closure of $T$ creates a tangle with 1 strand, identical to the knot $K$
+when $(1_t,~(2n)_t)$ is closed.
 \end{paperthm}
 \begin{proof}
 If the top closure of a tangle $T$ results in $n$ trivial strands that can be
 untangled, that means that among the crossings in the top closure of $T$, there
-are only ribbon singularities, as any clasp singularities would not make the top
-closure of $T$ trivial.
-Now those $n$ strands can be closed along the bottom to create $n$ unknots.
-Then each unknot is connected to the next using a ribbon.
-This ribbon may pass through the plane of the original knot, but since a ribbon
-consists of 2 strands, this would result in only ribbon singularities.
-This has effectively connected every adjacent pair of links as well as the first
-and last links together, creating the original knot by the assumption.
-Since the resultant knot is $K$ and contains only ribbon singularities, $K$ is
-ribbon.
+are only ribbon singularities, as any clasp singularities would not allow us to
+untangle the top closure of $T$.
 
-Conversely, consider a tangle $T$ with $n$ strands and $2n$ ends along the top
-numbered $1_t$ to $(2n)_t$.
+\svgc{proof}
+
+\papercap{Proof}{The result of top-closing a tangle, closing it symmetrically
+along the bottom, and then connecting each resulting unlink to the next using a
+ribbon.
+Connecting the unlinks involves making the connections
+$(2_t,~3_t),~(4_t,~5_t),~\dots,~((2n-2)_t,~(2n-1)_t))$ with a pair of strands.
+Note that this results in one long strand running along the top of the knot, so
+these connections are just the full closure of the tangle along with the
+connection $(1_t, (2n)_t)$.
+Here the central $R$ represents a knot that shows that the strands are tangled,
+but link up with their corresponding ends the way they do in a pure braid.}
+
+Now we can close those $n$ strands along the bottom to create $n$ unknots.
+Then we can connect each unknot to the next with a very thin ribbon by
+connecting the pairs $(2_t,~3_t),~(4_t,~5_t),~\dots,~((2n-2)_t,~(2n-1)_t))$ with
+a pair of strands each.
+Since we had top-closed the knot earlier, what we have effectively done is
+connected each top strand to the next, starting from $1_t$ and ending with
+$(2n)_t$ (see \figProof).
+The remaining connections make the full closure (see \figFull).
+This means that we have make the one connection to the full closure to create
+the knot $K$ and we have shown that the resulting knot only contains ribbon
+singularities, so $K$ must be a ribbon knot.
+
+Conversely, consider a tangle $T$ with $n$ strands.
+We can place all $2n$ of its ends along the top numbered $1_t$ to $(2n)_t$.
 \begin{paperlem}{Tangles}
-If a tangle $T$ with $n$ strands with $2n$ ends along the top can be top closed
-with $n$ stitchings to create the unlink consisting of $n$ unknots, then
-$\exists$ a tangle $T'$ consisting of $2n$ strands with $2n$ ends along the top
-and $2n$ ends along the bottom such that applying the just the bottom part of
-the full closure, consisting of the stitchings $(1_b$, $2_b)$, $(3_b$, $4_b)$,
-\dots, $((2n-1)_b$, $(2n)_b)$, results in $T$.
+If a tangle $T$ with $n$ strands with all $2n$ of its ends placed along the top
+can be top closed with $n$ stitchings to create the unlink consisting of $n$
+unknots, then $\exists$ a tangle $T'$ consisting of $2n$ strands (with its ends
+arranged normally) such that applying the just the bottom part of the full
+closure, consisting of the stitchings
+$(1_b,~2_b),~(3_b,~4_b),~\dots,~((2n-1)_b,~(2n)_b)$, results in $T$.
 
 \svgc{lemma}
 
@@ -141,17 +163,17 @@ closed strands.}
 \begin{proof}[Proof of Lemma]
 Once $T$ is closed, a continuous deformation of three dimensional space turns it
 into the unlink by assumption.
-Once untangled, a ribbon can be attached to each link, extending below the
-tangle.
+Once untangled, each link can be stretched, extending below the boundary of what
+is considered the tangle.
 This can be done trivially as $T$ is untangled.
-If the earlier spatial deformation were to be reversed, the ribbons would be
-deformed along with $T$.
-Now, it suffices to cap the ribbons at the bottom, similar to the bottom part of
-a full closure.
-The result is a tangle with $2n$ ends along both the top and the bottom where
-the bottom ends are closed pairwise as described earlier and the tangle can be
-top closed to produce the untangle.
-This tangle is therefore $T'$.
+If the earlier spatial deformation were to be reversed, the parts of the unlinks
+that were outside of the tangle would remain there, and would effectively be
+ribbons that were deformed along with $T$.
+If were to now consider the bottom ends of the ribbons as part of the tangle, we
+would get the tangle $T$, but if we were to chop the cap off of each of the
+ribbons, we would get $T'$, as closing this tangle along the bottom would
+clearly produce $T$ since that would simply put the caps back on the ribbons.
+Therefore, such a $T'$ exists.
 \end{proof}
 For any knot in its ribbon presentation, the lower half of each component can be
 enclosed in one large tangle.
@@ -197,15 +219,14 @@ strands.}
 Here the knot in the tangle is completely different and all the crossings are
 between components of the knot, as opposed to between ribbons.
 This is equivalent to applying just the top part of the full closure to the
-tangle and then applying the stitching $(1_t$, $(2n)_t)$.
+tangle and then applying the stitching $(1_t,~(2n)_t)$.
 
 \svgc{complete}
 
 \papercap{Complete}{In this diagram, nothing within $R$ changed from
 \figTwisted.
 Everything above $R$ was smoothly deformed to illustrate that the resulting
-strands above $R$ are simply a top closure and the stitching $(1_t$,
-$(2n)_t)$.}
+strands above $R$ are simply a top closure and the stitching $(1_t,~(2n)_t)$.}
 
 Note that since any ribbon knot is a series of unzipped strands connecting
 subsequent components of the unlink, then the removal of these strands will
@@ -240,9 +261,9 @@ Thus, $T'$ matches the conditions of the tangle described in \thmRibbon.
 
 Here is a table of all 21 ribbon knots with 10 crossings or fewer in tangle
 form.
-Each was originally a symmetric union provided by \cite{oneknot} and
-\cite{manyknots} and was deformed to appear as the full closure of a tangle with
-the extra stitching of $(1_t$, $4_t)$.
+Each was originally a symmetric union provided by \cite{one} and
+\cite{many} and was deformed to appear as the full closure of a tangle with
+the extra stitching of $(1_t,~4_t)$.
 \end{paper}
 
 \setlength{\tabcolsep}{12pt}
@@ -296,11 +317,11 @@ In the lower diagram, the knot has been cut and restitched just outside of the
 upper bridge.
 The lower strand was pulled under the bridge after being stitched.}
 
-\begin{paperquestion}{Cuts}
+\begin{paperqtn}{Cuts}
 For any ribbon knot in its symmetric union presentation, can the location of the
-cuts between $(1_t$, $4_t)$ and $(2_t$, $3_t)$ be generalized to be along the
+cuts between $(1_t,~4_t)$ and $(2_t,~3_t)$ be generalized to be along the
 two strands that are first to cross one of the 2 bridges of the symmetric union?
-\end{paperquestion}
+\end{paperqtn}
 
 \papersec{Database}
 
@@ -310,8 +331,8 @@ This notation consists of a list of crossings of the form $X_{a,b,c,d}$ which
 labels the four strands in a crossing from the lower incoming strand and
 continues counterclockwise.
 
-\svgsize{crossing}{0.5\columnwidth}
-\vspace{1em}
+\begin{center}\svgsize{crossing}{0.5\columnwidth}\end{center}
+
 \papercap{Crossing}{This shows a typical crossing.
 The numbering stars from the lower incoming segment and proceeds
 counterclockwise.
@@ -339,11 +360,11 @@ The full database may be accessed at TODO URL.
 \papersec{References}
 
 \begin{thebibliography}{}
-\bibitem{oneknot}
+\bibitem{one}
 Lamm, Christoph.
 \textit{Symmetric union presentations for 2-bridge ribbon knots.}
 \texttt{arXiv:math/0602395}
-\bibitem{manyknots}
+\bibitem{many}
 Lamm, Christoph.
 \textit{Symmetric unions and ribbon knots.}
 Osaka J. Math. 37 (2000), no. 3, 537--550
