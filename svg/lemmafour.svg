@@ -49,7 +49,8 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:snap-bbox-edge-midpoints="true" />
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-nodes="false" />
   <metadata
      id="metadata3428">
     <rdf:RDF>
@@ -68,11 +69,12 @@
      id="layer1">
     <g
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="text4310">
+       id="text4310"
+       transform="translate(2.4999962,-16.35281)">
       <path
          d="m 420.73865,466.59125 1.31836,27.94922 -3.33985,0 q -0.96679,-7.38282 -2.63672,-10.54688 -2.72461,-5.09765 -7.29492,-7.4707 -4.48242,-2.46094 -11.86523,-2.46094 l -16.78711,0 0,91.05469 q 0,10.98633 2.37305,13.71094 3.33984,3.6914 10.2832,3.6914 l 4.13086,0 0,3.25196 -50.53711,0 0,-3.25196 4.21875,0 q 7.55859,0 10.72265,-4.57031 1.9336,-2.8125 1.9336,-12.83203 l 0,-91.05469 -14.32617,0 q -8.34961,0 -11.86524,1.23047 -4.57031,1.66992 -7.82226,6.41602 -3.25196,4.74609 -3.86719,12.83203 l -3.33984,0 1.40625,-27.94922 97.29492,0 z"
-         style=""
-         id="path4317" />
+         id="path4317"
+         inkscape:connector-curvature="0" />
     </g>
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
