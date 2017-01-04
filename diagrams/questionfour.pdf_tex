@@ -1,6 +1,6 @@
 %% Creator: Inkscape 0.91_64bit, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'question.pdf' (pdf, eps, ps)
+%% Accompanies image file 'questionfour.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{597.77887975bp}%
+    \setlength{\unitlength}{599.27558594bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,7 +48,7 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.40836317)%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/question.pdf}}%
+  \begin{picture}(1,1.3990839)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagrams/questionfour.pdf}}%
   \end{picture}%
 \endgroup%
