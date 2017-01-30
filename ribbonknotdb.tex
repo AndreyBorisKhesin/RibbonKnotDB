@@ -42,11 +42,14 @@ knots that are mathematically interesting.
 {A clasp singularity and a ribbon singularity.
 A ribbon singularity is the image of two curves, one that connects two of the
 disc's boundary points and one that connects none.
-A clasp singularity occurs when both curves connect one such point.}
+A clasp singularity occurs when both curves connect one such point.
+The translucent regions are the images of the discs, with the gray lines
+representing the discs' boundaries, the knots.
+The black lines are the singularities.}
 
 A knot is the boundary of a disc embedded in three-dimensional space.
 Unless the embedding is trivial and its boundary is the unknot, this disc will
-have self-intersections, or \text{singularities}.
+have self-intersections, or \textit{singularities}.
 A ribbon knot is a knot that is the boundary of an embedded disc that contains
 only ribbon singularities.
 A ribbon singularity occurs when each curve of the disk's self-intersections is
@@ -68,6 +71,12 @@ a series of disks, each connected to the next by an arc, the ribbon, which is
 unzipped into two antiparallel strands after applying the mapping that sends the
 discs to the knot (see \figPresentation).
 
+It is important to note that if we were to fill in the image of disc whose
+boundary is a ribbon presentation, then the only singularities will occur when
+the ribbon intersections one of the components.
+These will clearly be ribbon singularities (see \figSingularities).
+Thus, any knot in a ribbon presentation is a ribbon knot, hence the name.
+
 \papersec{Tangles}
 
 A \textit{tangle} is a collection of crossings with a certain number of loose
@@ -88,16 +97,18 @@ tangle; this is done for convenience.
 The $2n$ ends could be located anywhere on the perimeter.
 We label the ends of an $n$-strand tangle from $1_t$ to $n_t$ along the top and
 $1_b$ to $n_b$ along the bottom.
-The central R represents a knot that shows that the strands are tangled, but
-link up with their corresponding ends the way they do in a pure braid.}
+The central R represents a knot that shows that the dashed strands are tangled,
+but link up with their corresponding ends the way they do in a pure braid.}
 
 For convenience, a tangle is often drawn like a pure braid, with $n$ ends along
 both the top and the bottom where the order of the strands along the top is the
 same as along the bottom.
-Thus, if we were to follow each strand in a tangle, we would end up below our
-starting point.
+Thus, if we were to follow any strand of a tangle, we would end right below
+where we started.
 We denote the tops of the strands by $1_t,~2_t,~\dots,~n_t$, and the
 bottoms  by $1_b,~2_b,~\dots,~n_b$ (see \figTangle).
+This means that $k_t$ is connected through the tangle to $k_b$, where $k$ is
+some value.
 
 A \textit{closure} of a tangle is a way of pairwise stitching the ends of the
 tangle together to reduce the resulting number of strands.
@@ -426,6 +437,10 @@ drawn with the full closure and the connection $(1_t,~4_t)$ added, effectively
 recreating the original knots.
 We also present the planar diagram notation and tangle values of each of the
 knots as they appear in the table (see below).
+All of the data in the second table is also available online at\\
+\url{
+https://raw.githubusercontent.com/AndreyBorisKhesin/RibbonKnotDB/master/db.csv}.
+TODO SHORTEN URL
 
 \papersec{References}
 
