@@ -85,7 +85,7 @@
        id="path4277"
        inkscape:connector-curvature="0" />
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5,5;stroke-opacity:1;stroke-dashoffset:0"
        d="m 319.27475,658.03644 105.54495,0"
        id="path4428"
        inkscape:connector-curvature="0" />
@@ -129,7 +129,7 @@
        x="0"
        y="526.18109" />
     <path
-       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5, 10;stroke-dashoffset:0;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:5,5;stroke-dashoffset:0;stroke-opacity:1"
        d="m 106.42492,526.18109 0,131.85535 105.54496,0 -0.93525,-131.85535 108.62892,0 -0.3888,131.85535 102.98497,-1.40925 -0.92525,-130.4461 108.61477,0 1.73539,131.85535 105.54498,0 0,-131.85535"
        id="path3348"
        inkscape:connector-curvature="0" />
