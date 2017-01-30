@@ -20,6 +20,7 @@
 \usepackage{mathrsfs}
 \usepackage{multicol}
 \usepackage{multirow}
+\usepackage{needspace}
 \usepackage{pgfplots}
 \usepackage{pgfplotstable}
 \usepackage{siunitx}
@@ -220,10 +221,12 @@ Theorem \thesubsubsection\noexpand\xspace}}{\end{theorem}}}
 %Section headers
 \newcounter{paperseccounter}
 \newcounter{papersubseccounter}[paperseccounter]
-\newcommand\papersec[1]{\stepcounter{paperseccounter}
+\newcommand\papersec[1]{\needspace{1in}
+\stepcounter{paperseccounter}
 \stepcounter{section}
 \begin{center}\Roman{paperseccounter} \textsc{#1}\end{center}}
-\newcommand\papersubsec[1]{\stepcounter{papersubseccounter}
+\newcommand\papersubsec[1]{\needspace{1in}
+\stepcounter{papersubseccounter}
 \addtocounter{subsection}{\thepaperthmamount}
 \setcounter{subsubsection}{0}
 {\begin{center}
