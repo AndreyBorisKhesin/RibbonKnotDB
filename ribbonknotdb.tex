@@ -82,19 +82,19 @@ ends.
 An $n$-strand tangle will have $2n$ such ends.
 
 \paperfig{Tangle}{\size{9}{
-\hspace{0.19\columnwidth}$1_t$\hspace{0.16\columnwidth}$2_t$
-\hspace{0.04\columnwidth}\dots\hspace{0.02\columnwidth}$(n-1)_t$
-\hspace{0.105\columnwidth}$n_t$\\
+\hspace{0.19\columnwidth}$t_1$\hspace{0.17\columnwidth}$t_2$
+\hspace{0.05\columnwidth}\dots\hspace{0.04\columnwidth}$t_{n-1}$
+\hspace{0.14\columnwidth}$t_n$\\
 \svgc{tangle}\\
-\indent\hspace{0.19\columnwidth}$1_b$\hspace{0.16\columnwidth}$2_b$
-\hspace{0.04\columnwidth}\dots\hspace{0.02\columnwidth}$(n-1)_b$
-\hspace{0.09\columnwidth}$n_b$}}
+\indent\hspace{0.19\columnwidth}$b_1$\hspace{0.16\columnwidth}$b_2$
+\hspace{0.04\columnwidth}\dots\hspace{0.04\columnwidth}$b_{n-1}$
+\hspace{0.13\columnwidth}$b_n$}}
 {An $n$-strand tangle.
 In a tangle, the ends do not have to be drawn along the top and bottom of the
 tangle; this is done for convenience.
 The $2n$ ends could be located anywhere on the perimeter.
-We label the ends of an $n$-strand tangle from $1_t$ to $n_t$ along the top and
-$1_b$ to $n_b$ along the bottom.
+We label the ends of an $n$-strand tangle from $t_1$ to $t_n$ along the top and
+$b_1$ to $b_n$ along the bottom.
 The central R represents a knot that shows that the dashed strands are tangled,
 but link up with their corresponding ends the way they do in a pure braid.}
 
@@ -103,22 +103,24 @@ both the top and the bottom where the order of the strands along the top is the
 same as along the bottom.
 Thus, if we were to follow any strand of a tangle, we would end right below
 where we started.
-We denote the tops of the strands by $1_t,~2_t,~\dots,~n_t$, and the
-bottoms  by $1_b,~2_b,~\dots,~n_b$ (see \figTangle).
-This means that $k_t$ is connected through the tangle to $k_b$, where $k$ is
-some value.
+We denote the tops of the strands by $t_1,~t_2,~\dots,~t_n$, and the
+bottoms  by $b_1,~b_2,~\dots,~b_n$ (see \figTangle).
+This means that $t_k$ is connected through the tangle to $b_k$, where $k$ is
+some strand index.
 
 A \textit{closure} of a tangle is a way of pairwise stitching the ends of the
 tangle together to reduce the resulting number of strands.
 
 \paperfig{Top}{\size{9}{
-\hspace{0.1\columnwidth}$1_t$\hspace{0.07\columnwidth}$2_t$
-\hspace{0.07\columnwidth}$3_t$\hspace{0.127\columnwidth}\dots
-\hspace{0.04\columnwidth}$(2n-2)_t$ $(2n-1)_t$ $(2n)_t$\\
+\hspace{0.1\columnwidth}$t_1$\hspace{0.07\columnwidth}$t_2$
+\hspace{0.07\columnwidth}$t_3$\hspace{0.14\columnwidth}\dots
+\hspace{0.08\columnwidth}$t_{2n-2}$\hspace{0.04\columnwidth}$t_{2n-1}$
+\hspace{0.04\columnwidth}$t_{2n}$\\
 \svgc{top}\\
-\indent\hspace{0.1\columnwidth}$1_b$\hspace{0.07\columnwidth}$2_b$
-\hspace{0.06\columnwidth}$3_b$\hspace{0.12\columnwidth}\dots
-\hspace{0.04\columnwidth}$(2n-2)_b$ $(2n-1)_b$ $(2n)_b$}}
+\indent\hspace{0.1\columnwidth}$b_1$\hspace{0.07\columnwidth}$b_2$
+\hspace{0.06\columnwidth}$b_3$\hspace{0.125\columnwidth}\dots
+\hspace{0.08\columnwidth}$b_{2n-2}$\hspace{0.03\columnwidth}$b_{2n-1}$
+\hspace{0.03\columnwidth}$b_{2n}$}}
 {A top closure of a $2n$-strand tangle.
 The top closure leaves every bottom end open and leaves all the upper ends
 closed.
@@ -127,21 +129,23 @@ Only 4 of the $n$ closures are shown here.}
 
 \begin{paperdef}{TopClosure}{For a $2n$-strand tangle, we define the
 \textit{top closure} of a tangle to be the closure that stitches together the
-pairs $(1_t,~2_t),~(3_t,~4_t),~\dots,~((2n-1)_t,~(2n)_t)$ to create
+pairs $(t_1,~t_2),~(t_3,~t_4),~\dots,~(t_{2n-1},~t_{2n})$ to create
 $n$ strands (see \figTop).}\end{paperdef}
 
 \paperfig{Full}{\size{9}{
-\hspace{0.1\columnwidth}$1_t$\hspace{0.07\columnwidth}$2_t$
-\hspace{0.07\columnwidth}$3_t$\hspace{0.127\columnwidth}\dots
-\hspace{0.04\columnwidth}$(2n-2)_t$ $(2n-1)_t$ $(2n)_t$\\
+\hspace{0.1\columnwidth}$t_1$\hspace{0.07\columnwidth}$t_2$
+\hspace{0.07\columnwidth}$t_3$\hspace{0.14\columnwidth}\dots
+\hspace{0.08\columnwidth}$t_{2n-2}$\hspace{0.04\columnwidth}$t_{2n-1}$
+\hspace{0.04\columnwidth}$t_{2n}$\\
 \svgc{full}\\
-\indent\hspace{0.1\columnwidth}$1_b$\hspace{0.07\columnwidth}$2_b$
-\hspace{0.06\columnwidth}$3_b$\hspace{0.12\columnwidth}\dots
-\hspace{0.04\columnwidth}$(2n-2)_b$ $(2n-1)_b$ $(2n)_b$}}
+\indent\hspace{0.1\columnwidth}$b_1$\hspace{0.07\columnwidth}$b_2$
+\hspace{0.06\columnwidth}$b_3$\hspace{0.125\columnwidth}\dots
+\hspace{0.08\columnwidth}$b_{2n-2}$\hspace{0.03\columnwidth}$b_{2n-1}$
+\hspace{0.03\columnwidth}$b_{2n}$}}
 {A full closure of a $2n$-strand tangle.
 It is important to note that the full closure reproduces the top closure along
 the bottom ends, and closes the top ends similarly, but offset by 1 strand.
-This closure leaves ends $1_t$ and $(2n)_t$ open.
+This closure leaves ends $t_1$ and $t_{2n}$ open.
 After the closure, the tangle has only 1 strand instead of $2n$.
 Only 6 of the $2n-1$ closures are shown here fully.
 The break in the central top closure represents the presence of more closed
@@ -149,8 +153,8 @@ strands.}
 
 \begin{paperdef}{FullClosure}{For a $2n$-strand tangle, we define the
 \textit{full closure} of a tangle to be the closure that stitches together the
-pairs $(1_b,~2_b),~(2_t,~3_t),~(3_b,~4_b)$, \dots,
-$((2n-2)_t,~(2n-1)_t),~((2n-1)_b,~(2n)_b)$ to create 1 strand (see
+pairs $(b_1,~b_2),~(t_2,~t_3),~(b_3,~b_4)$, \dots,
+$(t_{2n-2},~t_{2n-1}),~(b_{2n-1},~b_{2n})$ to create 1 strand (see
 \figFull).}\end{paperdef}
 
 If the inside of the tangle is trivial, then in the top closure, the strands
@@ -163,7 +167,7 @@ These closures allow us to show an important property of ribbon knots.
 $K$ is a ribbon knot if and only if there exists a $2n$-strand tangle $T$ such
 that the top closure of $T$ creates the $n$-strand untangle and the full closure
 of $T$ creates a tangle with 1 strand, identical to the knot $K$ when
-$(1_t,~(2n)_t)$ is closed.
+$(t_1,~t_{2n})$ is closed.
 \end{paperthm}
 \begin{proof}
 We know that the top closure of $T$ effectively results in $n$ ribbons that can
@@ -177,32 +181,32 @@ singularities can occur when the untangling process is undone.\\
 along the bottom, and then connecting each resulting unlink to the next using a
 ribbon.
 Connecting the unlinks involves making the connections
-$(2_t,~3_t),~(4_t,~5_t),~\dots,~((2n-2)_t,~(2n-1)_t)$ with a pair of strands.
+$(t_2,~t_3),~(t_4,~t_5),~\dots,~(t_{2n-2},~t_{2n-1})$ with a pair of strands.
 Note that this results in one long strand running along the top of the knot, so
 these connections are just the full closure of the tangle along with the
-connection $(1_t,~(2n)_t)$.}
+connection $(t_1,~t_{2n})$.}
 
 Now those $n$ ribbons can be closed along the bottom to create $n$ unknots,
 which are the $n$-component unlink.
 Then each unknot can be connected to the next with a very thin ribbon by
-connecting the pairs $(2_t,~3_t),~(4_t,~5_t),~\dots,~((2n-2)_t,~(2n-1)_t)$ with
+connecting the pairs $(t_2,~t_3),~(t_4,~t_5),~\dots,~(t_{2n-2},~t_{2n-1})$ with
 a pair of strands each.
 These ribbons might pass through the surface of the knot, but since they are
 ribbons, this would only add ribbon singularities to the knot.
 Since we had top closed the knot earlier, what we have effectively done is
-connected each top strand to the next, starting from $1_t$ and ending with
-$(2n)_t$ (see \figProof).
+connected each top strand to the next, starting from $t_1$ and ending with
+$t_{2n}$ (see \figProof).
 The remaining connections make the full closure (see \figFull).
 However, connecting each top strand to the next by connecting
-$(1_t,~2_t),~(3_t,~4_t),~\dots,~((2n-1)_t,~(2n)_t)$ is the same as connecting
-$(1_t,~(2n)_t)$.
+$(t_1,~t_2),~(t_3,~t_4),~\dots,~(t_{2n-1},~t_{2n})$ is the same as connecting
+$(t_1,~t_{2n})$.
 This means that we have added the one connection to the full closure to create
 the knot $K$ and we have shown that the resulting knot only contains ribbon
 singularities.
 Therefore, $K$ must be a ribbon knot.
 
 Conversely, consider an $n$-strand tangle $T$.
-All $2n$ of its ends can be placed along the top and numbered $1_t$ to $(2n)_t$.
+All $2n$ of its ends can be placed along the top and numbered $t_1$ to $t_{2n}$.
 
 \paperfig{Lemma}{\svgsize{lemmaone}{0.4\columnwidth}\\
 
@@ -287,7 +291,7 @@ the area below and above the ribbons is freely connected to the tangle (see
 
 However, since the top part of the knot no longer has any intersections, it is
 equivalent to the top half of the full closure of the large tangle, as well as
-the connection $(1_t,~(2n)_t)$ (see \figFull).
+the connection $(t_1,~t_{2n})$ (see \figFull).
 
 We know that since every ribbon knot has a ribbon presentation, then removing
 the ribbons that connect the components of the knot results in the $n$-component
@@ -307,7 +311,7 @@ along the bottom to result in $T$.
 We know that this $T'$ can be top closed to result in the untangle, as $T$ can
 be top closed to result in the unlink (see \figLemma).
 Additionally, if the bottom half of the full closure of $T'$ results in $T$ and
-the top half of the full closure with the connection $(1_t,~(2n)_t)$ of $T$
+the top half of the full closure with the connection $(t_1,~t_{2n})$ of $T$
 results in our knot, then the full closure of $T'$ with the same connection also
 results in our knot.
 
@@ -334,11 +338,11 @@ components?
 
 These tangles are obtained from the original knots by locating 4 places in which
 to cut the knot.
-The result is the tangle and if it is labeled properly from $1_t$ to $4_b$ then
+The result is the tangle and if it is labeled properly from $t_1$ to $b_4$ then
 the full closure will undo the earlier cuts and the top closure will untangle it.
 
-The locations of the two cuts that result in the ends $1_b$ and $2_b$, as well
-as $3_b$ and $4_b$, are, in general, not very interesting.
+The locations of the two cuts that result in the ends $b_1$ and $b_2$, as well
+as $b_3$ and $b_4$, are, in general, not very interesting.
 They are merely a location on the knot that can be kept on the outside while
 untangling the top closure of the tangle.
 
@@ -381,7 +385,7 @@ relevant 21 ribbon knots.
 
 \begin{paperqtn}{Cuts}
 For any ribbon knot in its symmetric union presentation, can the location of the
-cuts between $(1_t,~4_t)$ and $(2_t,~3_t)$ be generalized to be along the
+cuts between $(t_1,~t_4)$ and $(t_2,~t_3)$ be generalized to be along the
 two strands that are first to cross a bridge of the symmetric union?
 \end{paperqtn}
 
@@ -395,8 +399,8 @@ we were able to find the corresponding tangles.
 We can write down the tangle information of each of these by enumerating all of
 the edges from a common starting point.
 
-We decided to use $1_t$ proceeding downwards.
-Thus, the edge descending from $1_t$ is labeled 1, and every time it passes
+We decided to use $t_1$ proceeding downwards.
+Thus, the edge descending from $t_1$ is labeled 1, and every time it passes
 through a crossing, the value increments.
 We can then write down the planar diagram information for the knot.
 
@@ -420,18 +424,18 @@ and then up the fourth.
 
 \papersvg{Example}{example}
 {This depicts all the segments of knot $6_1$ as numbered.
-The numbering starts from $1_t$ and proceeds downwards.
+The numbering starts from $t_1$ and proceeds downwards.
 The tangle values of $6_1$ are (9, 13, 17) the values of the edges along the
 three connections from strands 1 to 4.}
 
 We also need to know where the strands of the tangle have been cut, so we need
-to know the three numbers given to the connections $(1_b,~2_b),~(2_t,~3_t)$, and
-$(3_b,~4_b)$ in that order.
-We do not need to value for $(1_t,~4_t)$ as it is always 1.
+to know the three numbers given to the connections $(b_1,~b_2),~(t_2,~t_3)$, and
+$(b_3,~b_4)$ in that order.
+We do not need to value for $(t_1,~t_4)$ as it is always 1.
 For the knot $6_1$, the tangle values are (9, 13, 17) (see \figExample).
 
 We present these tangles for all 21 ribbon knots with 10 crossings or fewer,
-drawn with the full closure and the connection $(1_t,~4_t)$ added, effectively
+drawn with the full closure and the connection $(t_1,~t_4)$ added, effectively
 recreating the original knots.
 We also present the planar diagram notation and tangle values of each of the
 knots as they appear in the table (see below).
