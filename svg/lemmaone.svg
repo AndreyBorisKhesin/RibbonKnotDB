@@ -15,7 +15,7 @@
    id="svg3423"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="lemmaone.svg">
+   sodipodi:docname="lemmathree.svg">
   <defs
      id="defs3425" />
   <sodipodi:namedview
@@ -70,30 +70,20 @@
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:9.99975204;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4149-7"
        cx="156.592"
-       cy="-263.09055"
-       r="48.864124"
-       transform="scale(1,-1)" />
+       cy="794.27161"
+       r="48.864124" />
     <circle
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:9.99975204;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4149-6"
        cx="587.50244"
-       cy="-263.09055"
-       r="48.864124"
-       transform="scale(1,-1)" />
+       cy="794.27161"
+       r="48.864124" />
     <circle
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:9.99975204;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4149-9"
        cx="372.04724"
-       cy="-263.09055"
-       r="48.864124"
-       transform="scale(1,-1)" />
-    <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4314-4"
-       width="20"
-       height="35.520744"
-       x="362.04724"
-       y="208.58401" />
+       cy="794.27161"
+       r="48.864124" />
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect4147"
@@ -102,13 +92,24 @@
        x="0"
        y="263.09055" />
     <g
-       transform="translate(-3.7890626e-6,-1.8950195e-5)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180px;line-height:100%;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       id="text4310">
+       id="text4918">
       <path
-         inkscape:connector-curvature="0"
-         d="m 420.73865,466.59125 1.31836,27.94922 -3.33985,0 q -0.96679,-7.38282 -2.63672,-10.54688 -2.72461,-5.09765 -7.29492,-7.4707 -4.48242,-2.46094 -11.86523,-2.46094 l -16.78711,0 0,91.05469 q 0,10.98633 2.37305,13.71094 3.33984,3.6914 10.2832,3.6914 l 4.13086,0 0,3.25196 -50.53711,0 0,-3.25196 4.21875,0 q 7.55859,0 10.72265,-4.57031 1.9336,-2.8125 1.9336,-12.83203 l 0,-91.05469 -14.32617,0 q -8.34961,0 -11.86524,1.23047 -4.57031,1.66992 -7.82226,6.41602 -3.25196,4.74609 -3.86719,12.83203 l -3.33984,0 1.40625,-27.94922 97.29492,0 z"
-         id="path4317" />
+         d="m 405.88513,467.95355 1.31836,27.94922 -3.33984,0 q -0.9668,-7.38281 -2.63672,-10.54687 -2.72461,-5.09766 -7.29492,-7.47071 -4.48243,-2.46093 -11.86524,-2.46093 l -16.78711,0 0,91.05468 q 0,10.98633 2.37305,13.71094 3.33984,3.69141 10.2832,3.69141 l 4.13086,0 0,3.25195 -50.53711,0 0,-3.25195 4.21875,0 q 7.5586,0 10.72266,-4.57032 1.93359,-2.8125 1.93359,-12.83203 l 0,-91.05468 -14.32617,0 q -8.34961,0 -11.86523,1.23046 -4.57032,1.66993 -7.82227,6.41602 -3.25195,4.74609 -3.86719,12.83203 l -3.33984,0 1.40625,-27.94922 97.29492,0 z"
+         style=""
+         id="path4923" />
+      <path
+         d="m 426.01208,516.55707 -4.74609,-26.01563 q -2.02148,-10.81054 -2.02148,-14.58984 0,-5.625 2.28515,-8.17383 2.28516,-2.54883 6.24024,-2.54883 3.95508,0 6.5039,2.63672 2.63672,2.54883 2.63672,6.76758 0,3.25195 -2.28515,15.99609 l -4.7461,25.92774 -3.86719,0 z"
+         style=""
+         id="path4925" />
     </g>
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4314-4"
+       width="20"
+       height="35.520744"
+       x="362.04724"
+       y="-848.77814"
+       transform="scale(1,-1)" />
   </g>
 </svg>
