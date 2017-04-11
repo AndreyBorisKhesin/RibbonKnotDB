@@ -7,14 +7,15 @@
 \paperauth{A}{Khesin}{University of Toronto}
 \begin{paperabs}
 It is known that there are 21 ribbon knots with 10 crossings or fewer.
-All 21 of these knots can be expressed as symmetric unions (see \cite{many} and
-\cite{one}).
-For each of these ribbon knots, we present a 4-strand tangle of which a specific
-closure results in the original knot, while a second such closure results in the
+For each of these ribbon knots, we present a corresponding 4-strand tangle with
+the following properties.
+The application of a particular closure to each of these tangles results in the
 2-component untangle.
-We show that a tangle satisfying similar conditions exists for any ribbon knot
-and that any knot corresponding to such a tangle is ribbon knot.
-We also provide diagrams and the tangle information of these tangles for the
+Additionally, the application of a different closure to each of these tangles
+results in the knot that the tangle corresponds to.
+Our main result is we show that such a tangle exists for any ribbon knot.
+We also show that any knot that corresponds to such a tangle is a ribbon knot.
+Lastly, we provide diagrams and the tangle information of such tangles for the
 first 21 ribbon knots.
 \end{paperabs}
 \begin{paper}
@@ -28,83 +29,113 @@ These knots have indices $6_1$, $8_8$, $8_9$, $8_{20}$, $9_{27}$, $9_{41}$,
 $9_{46}$, $10_3$, $10_{22}$, $10_{35}$, $10_{42}$, $10_{48}$, $10_{75}$,
 $10_{87}$, $10_{99}$, $10_{123}$, $10_{129}$, $10_{137}$, $10_{140}$,
 $10_{153}$, and $10_{155}$.
-
-It has been shown that the 21 ribbon knots with 10 crossings or fewer can be
-expressed as \textit{symmetric unions} (see \cite{many} and \cite{one}).
-A symmetric union is a particular kind of knot diagram.
-Such a diagram must have a central axis of symmetry, an axis on either side of
-which the knot diagram is symmetric.
-There are two structures that can be located on this axis.
-The first are bridges, strands that approach the axis, cross it, and then keep
-going, the way an actual bridge passes right over a river.
-The second such set of structure are crossings, where one of the knot's
-crossings is located directly on the axis, resulting in a slight asymmetry.
-These symmetric unions can be used to construct presentations of these ribbon
-knots that will be shown later.
+We will show that for each ribbon knot, there is a tangle that corresponding to
+that knot that satisfies a specific set of conditions.
+We will also show that if there is a tangle satisfying these conditions, then
+the knot that it corresponds to is a ribbon knot.
+Lastly, we will provide the diagrams of such tangles for the 21 ribbon knots
+listed above.
 
 \paperfig{Singularities}{\svgsize{clasp}{0.4\columnwidth}\hfill
 \svgsize{ribbon}{0.4\columnwidth}\\
 
 \noindent Clasp Singularity\hfill Ribbon Singularity}
 {A clasp singularity and a ribbon singularity.
-A singularity occurs when the images two curves in the disc, the one whose
-boundary is the knot, overlap and form a single curve in the image.
-As the disc is immersed, the endpoints of the curve in the image must lie on the
-knot.
-We consider the points of the knot which coincide with these endpoints.
-If the preimages of these points on the knot are the two endpoints of one of our
-original curves, the singularity is deemed ribbon.
-If each of the preimages is one of the endpoints of a different curve, the
-singularity is deemed clasp.
+Every knot $K$ is the boundary of a $M$, a disc $D$ immersed into
+three-dimensional space.
+$M$ can be drawn such that all of the self-intersections of $M$ are 1-manifolds.
+Each of the curves that form the self-intersections of $M$ is a singularity.
+For each of these curves $C$, we know that since the $C$ is a self-intersection
+of $D$, there were curves $C_1$ and $C_2$ in $D$ whose images are $C$.
+We now consider the endpoints of $C_1$ and $C_2$.
+We know that two of these four endpoints have to be on the boundary of $M$ since
+the endpoints of $C$ are on the boundary of $D$.
+If either $C_1$ or $C_2$ has both of its endpoints on the boundary of $M$, the
+singularity is a ribbon singularity, otherwise it is a clasp singularity.
 The translucent regions are the images of the discs, with the gray lines
 representing the discs' boundaries, the knots.
 The black lines are the singularities.}
 
-A knot is the boundary of a disc immersed in three-dimensional space.
+We start by precisely defining what it means for a knot to be a ribbon knot.
+Every knot is the boundary of a disc immersed in three-dimensional space.
 Unless the immersion is trivial and its boundary is the unknot, this disc will
 have self-intersections, or \textit{singularities}.
-A \textit{ribbon knot} is a knot that is the boundary of an embedded disc that
-contains only ribbon singularities (see \figSingularities).
 
-Instead of immersing a single disc in three-dimensional space, we can immerse
-several such discs, each connected to the next by an arc, resulting in what
-looks a string of very flat beads.
-After applying our immersion, we can replace each of the arc with a ribbon.
-All this means is that we replace each of these strands with a pair of strands
-that run right next to each other, each tracing out a path right next to where
-the arc used to be.
-This results in a single knot, but it has some interesting properties.
+\begin{paperdef}{Ribbon}
+A \textit{ribbon knot} is a knot that can be drawn as the boundary of a disc
+immersed into three-dimensional space that contains only ribbon singularities
+(see \figSingularities).
+\end{paperdef}
+
+\papersvg{Immersion}{immersion}
+{The first step in constructing a ribbon knot.
+We start with a series of discs connected in a chain with arcs.
+In this case, we have two such discs.
+We then immerse our structure into three dimensional space, keeping the
+immersion of the discs trivial.
+The immersion of the arc is non-trivial.
+To turn this into a ribbon knot, all we have to do is unzip the image of the
+arc.
+This will create the ribbon knot $6_1$.}
+
+There is a way to construct a knot that is guaranteed to be a ribbon knot.
+To do this, instead of immersing a single disc into three-dimensional space, we
+immerse several such discs, each connected to the next by an arc, resulting in
+what would look like the profile of a string of beads.
+However, the immersion of each disc must be trivial.
+We cannot let the discs have self-intersections as this might result in clasp
+singularities.
+Fortunately, there are no restriction on the arcs, so they can freely pass
+through the images of discs as they please (see \figImmersion).
+Lastly, we ``unzip'' each arc by turning it into in a ribbon, which consists of
+two parallel strands that trace out the path of the arc.
+Note that after the last step, the structure in the diagram above becomes the
+knot in the diagram below.
+
+After applying the above process, we see that the only singularities in the
+resulting knot will arise where the ribbons intersect the embedded discs.
+We can see that the curves where this will occur do not touch the boundaries of
+the discs, but only those of the ribbons.
+Thus, all such singularities will be ribbon singularities and the knot will be a
+ribbon knot by \defRibbon (see \figSingularities).
 
 \papersvg{Presentation}{presentation}{The ribbon presentation of $6_1$.
 Note that there are two rectangular components which are the images of the
 boundaries of two discs.
-The ribbon connecting them is constructed by taking the image of a strand
-connecting the discs and unzipping it, replacing a single strand with a pair.
-Since the only intersections in ribbon presentations are between the ribbons
-and the components, any ribbon presentation is a presentation of a ribbon knot,
-making the name appropriate.}
+The ribbon connecting them is constructed by unzipping the image of an arc that
+connects the discs, thereby replacing a single strand with a pair.
+Since the only singularities in ribbon presentations can arise where the ribbons
+go through the components, any ribbon presentation is a presentation of a ribbon
+knot, making the name appropriate.}
 
 A \textit{ribbon presentation} is a knot diagram which consists of components
-and ribbons, satisfying certain properties.
-We represent the components as a sequence of large rectangles.
+and ribbons, all satisfying certain properties.
+We represent the components as a row of several large rectangles.
 The ribbons are pairs of parallel strands which connect each component to the
 next.
-They may intersect any of the components, but are not allowed to go through
-other ribbons.
-The ribbons are to appear as though they using to be a single arc, connecting
-one component to the next, that was unzipped into a pair of strands after the
-diagram was constructed.
+The ribbons may go through and loop around the components, but are not allowed
+to go through other ribbons.
 If a knot diagram satisfies these properties, it is a ribbon presentation (see
 \figPresentation).
 
-If we have a ribbon presentation of a knot, by filling in the image of the full
-disc and not just its boundary, we would see that all of the singularities will
-occur when ribbons pass through the large rectangular components.
-Thus, all of those singularities will be ribbon singularities so any knot that
-has a ribbon presentation is a ribbon knot, making the name appropriate.
+We note that a ribbon knot generated by the process described earlier can be
+easily drawn as a ribbon presentation.
+It would suffice to map each disc to a rectangle and, after unzipping the arcs
+between the rectangles into ribbons, not move the ribbons around.
+
+It is simple to show that any ribbon presentation is a knot diagram of a ribbon
+knot.
+If we have a ribbon presentation of some knot, we fill in the image of the disc
+whose boundary is the knot.
+We see that all of the singularities occur where the ribbons pass through the
+large rectangular components.
+We also see that all of those singularities are ribbon singularities so any
+knot expressed as a ribbon presentation is a ribbon knot, making the name
+appropriate (see \figSingularities).
 
 \papersec{Tangles}
 
+Another notion in our main result that we need to define is that of a tangle.
 A \textit{tangle} is a collection of crossings with a certain number of loose
 ends.
 An $n$-strand tangle will have $2n$ such ends.
@@ -119,12 +150,12 @@ An $n$-strand tangle will have $2n$ such ends.
 \hspace{0.13\columnwidth}$b_n$}}
 {An $n$-strand tangle T.
 In a tangle, the ends do not have to be drawn along the top and bottom of the
-tangle; this is done for convenience.
-The $2n$ ends could be located anywhere on the perimeter.
+tangle, this is done for convenience.
+The $2n$ ends can be located anywhere on the perimeter.
 We label the ends of an $n$-strand tangle from $t_1$ to $t_n$ along the top and
 $b_1$ to $b_n$ along the bottom.
-The central T represents a knot that shows that the dashed strands are tangled,
-but link up with their corresponding ends the way they do in a pure braid.}
+The central T that the dashed strands are tangled and cross many times, but link
+up with their corresponding ends at the bottom the way they do in a pure braid.}
 
 For convenience, a tangle is often drawn like a pure braid, with $n$ ends along
 both the top and the bottom.
@@ -135,14 +166,17 @@ where we started.
 We denote the tops of the strands by $t_1,~t_2,~\dots,~t_n$, and the
 bottoms  by $b_1,~b_2,~\dots,~b_n$ (see \figTangle).
 This means that $t_k$ is connected through the tangle to $b_k$, where $k$ is
-some strand index from 1 to $n$.
+some strand index between 1 and $n$.
 We will also denote the space of all $n$-strand tangles with $\mathcal{T}_n$.
 Note that the space of all knots is equivalent to $\mathcal{T}_1$ as a knot is
-merely a 1-tangle whose two ends have been connected.
+merely a 1-tangle with $t_1$ joined to $b_1$.
 
 A \textit{closure} of a tangle is a way of stitching some the ends of the tangle
 together in pairs.
-For each pair we join, we are reducing the resulting number of strands by 1.
+Each time we join a pair and the tangle has multiple strands, we are reducing
+the resulting number of strands by 1.
+By carefully stitching every single end of a tangle, we can turn this tangle
+into a knot.
 
 \paperfig{Top}{\size{9}{
 \hspace{0.1\columnwidth}$t_1$\hspace{0.07\columnwidth}$t_2$
@@ -215,7 +249,7 @@ $n$-component unlink, $U$.
 \end{paperwhere}
 
 These closures allow us to demonstrate the existence of a common property of all
-ribbon knots.
+ribbon knots, our main result.
 
 \begin{paperthm}{Ribbon}
 A knot $K$ is a ribbon knot if and only if there exists a $2n$-strand tangle $T$
@@ -224,19 +258,19 @@ $\phi(T)$ creates a 1-strand tangle, identical to the knot $K$ when
 $(t_1,~t_{2n})$ is closed.
 \end{paperthm}
 \begin{proof}
-We begin by proving the backward direction.
+We begin by proving the backwards direction.
 First we show that there exist surfaces bounded by $(\beta\circ\tau)(T)$ that do
 not have any singularities.
-We know that $(\beta\circ\tau)(T)$ results in the $n$-component unlink.
+We know that $(\beta\circ\tau)(T)$ is the $n$-component unlink.
 Any $n$-component link is the immersion of $n$ discs into three-dimensional
 space.
 We can apply some continuous spatial deformation, $f$, to our unlink to turn it
 back into the boundaries of its original discs.
 Applying the inverse transformation, $f^{\text-1}$, to the original discs, will
-result in the boundaries of the discs being deformed to end our unlink, while
-the surfaces will get continuously deformed and end up somewhere in space.
+result in the boundaries of the discs being deformed to end up as our unlink,
+while the surfaces will get continuously deformed and end up somewhere in space.
 The key point is that since the surfaces of the original discs did not intersect
-each other, after deforming them, they still will not.
+each other, after deforming them continuously, they still will not.
 Thus, we can draw surfaces bounded by $(\beta\circ\tau)(T)$ with no
 singularities.
 
@@ -261,26 +295,31 @@ one beside it with an arc.
 We will have $n-1$ such arcs, as we have $n$ loops along the top.
 We can now unzip each of these arcs, creating a pair of strands running side by
 side.
-We we now see, is that by doing this, we have effectively constructed $\phi(T)$
-with the added stitching $(t_1,~t_{2n})$ (see \figProof).
-What this means is that all that we have left to show is that all of the
-singularities that we added when we created and unzipped our arcs were ribbon
+By doing this, we have effectively constructed $\phi(T)$ with the added
+stitching $(t_1,~t_{2n})$ (see \figProof).
+
+We are trying to show that $\phi(T)$ with the stitching $(t_1,~t_{2n})$ is a
+ribbon knot, which is equivalent to showing that our modified version of
+$(\beta\circ\tau)(T)$ is a ribbon knot.
+We have already shown that $(\beta\circ\tau)(T)$ by itself contains only ribbon
 singularities.
-This is due to the fact that we are trying to show that the knot that we
-constructed, $\phi(T)$ with the stitching $(t_1,~t_{2n})$, is a ribbon knot.
+That means that we just need to show that adding the ribbons, those added we
+modified $(\beta\circ\tau)(T)$, only added ribbon singularities.
 
 We know that when we add our $n-1$ arcs to $(\beta\circ\tau)(T)$, those arcs
 could be passing through the immersed discs whose boundary is
 $(\beta\circ\tau)(T)$.
 However, when we unzip each of our arcs into two strands separated by an
 infinitesimally small distance, each of the intersections of our arcs with the
-immersed discs will turn into a ribbon singularity (see \figSingularities).
-Thus, we have shown that there is a way to immerse a disc into three dimensional
-space such that its boundary is $K$ and its image only contains ribbon
-singularities.
-Therefore, $K$ is a ribbon knot.
+immersed discs turns into a ribbon singularity (see \figSingularities).
+Thus, our modified version of $(\beta\circ\tau)(T)$ is a ribbon knot.
+Therefore, $\phi(T)$ with the stitching $(t_1,~t_{2n})$ is a also a ribbon knot.
+Since we know that $\phi(T)$ with the stitching $(t_1,~t_{2n})$ is simply
+equivalent to $K$, we know that $K$ is a ribbon knot.
 
-Conversely, consider an $n$-strand tangle $T$.
+Conversely, we will show that we can algorithmically construct a tangle $T$
+that satisfies the necessary conditions from any ribbon knot $K$.
+First, consider an $n$-strand tangle $T$.
 All $2n$ of its ends can be placed along the top and numbered $t_1$ to
 $t_{2n}$.\\
 
@@ -291,21 +330,19 @@ $t_{2n}$.\\
 \vspace{-4.3em}\hfill\svgsize{lemmatwo}{0.4\columnwidth}\\}
 {A visual representation of two tangles.
 The equality shows that if there exists a tangle T, then there is also a tangle
-T' that can be closed along the bottom to result in T.}
+T' such that $\beta$(T')=T.}
 
 \begin{paperlem}{Tangles}
 For any $n$-strand tangle $T$ with all $2n$ of its ends placed along the top,
-there exists a $2n$-strand tangle $T'$ such that applying the bottom part of the
-full closure results in $T$ (see \figLemma).
+there exists a $2n$-strand tangle $T'$ such that $\beta$(T')=T (see \figLemma).
 \end{paperlem}
-
-\begin{proof}[Proof of Lemma]
-We know that since $T$ has $2n$ ends, $T$ has $n$ strands.
+\begin{proof}[Proof of Lemma] TODO FIXME
+We know that $T$ is an $n$-strand tangle.
 Each of these strands starts at one of the ends along the top, comes down,
-weaves through the knot, and then comes out of the tangle through another one of
-the ends along the top.
+weaves through the tangle, and then comes out of the tangle through another one
+of the ends along the top.
 Each of these $n$ strands can be pulled down towards the bottom edge of the
-tangle, resulting in what looks like $n$ hanging loops.
+tangle, resulting in what look like $n$ hanging loops.
 After moving these $n$ loops further past some imaginary horizontal line, we can
 start pulling on the strands sideways, until we have tangled up the strands
 right above our boundary, but have ordered the strands below the boundary.
@@ -329,11 +366,13 @@ intersections were enclosed in one large tangle labeled R.
 The components of the knots are depicted exactly as they are while the
 intersections of the ribbons and the components are not shown.}
 
-For any knot in its ribbon presentation, all of the lower halves of the
-components can be enclosed in one large tangle (see \figPresentation).
-Next, all of the ribbons can be moved so that all of the connections between
-ribbons and components occur outside of this tangle but any intersections occur
-inside (see \figLowered).\\
+We start our construction of $T$ from the ribbon presentation of $K$.
+We enclose all of the lower halves of the components in one large tangle $R$
+(see \figPresentation).
+Next, we move all of the ribbons so that they the connect to the components
+above $R$, but all of the ribbons' crossings occur inside $R$ (see \figLowered).
+This can be done as no area of a ribbon presentation is isolated from $R$, thus
+any ribbons can be pulled into $R$, leaving just their ends outside.
 
 \papersvg{Twisted}{twisted}
 {A representation of a knot in ribbon presentation after all of the
@@ -342,69 +381,83 @@ were extracted out of it.
 The ribbons of the knots are depicted exactly as they are while the
 intersections of the components are not shown.}
 
-After we have enclosed the knot in a tangle, all the ribbons can be pulled out
-of this tangle.
-However, the tangle might be non-trivial since the ribbons could intersect the
-components.
-Fortunately, all of these intersections form ribbon singularities, so they can
-be moved them back into the tangle.
+After we have enclosed the knot in a tangle, we attempt to pull all of the
+ribbons out of $R$.
+To do this, we need to make sure that there is nothing inside $R$ that is above
+the ribbon, preventing us from pulling the ribbon up.
+However, there probably will be something there, namely parts of the components
+that the ribbons wrap around (see \figPresentation).
+What we can do is simply move those up and around the rest of the knot.
+The components will end up back in $R$ and we will be free to raise the ribbons
+(see \figTwisted).
+Since we have moved things in and out of the tangle $R$, we give the resulting
+tangle the name $R'$.
+Note that at this point, the components in $R'$ are twisted beyond belief.
 
-If a ribbon passed through a component before we pulled it up, there will be a
-strand on either side of the ribbon that can be moved back into the tangle as
-the area below and above the ribbons is freely connected to the tangle (see
-\figTwisted).
+\papersvg{Final}{final}
+{Here, T is a tangle such that $\beta$(T)=R'.
+The existence of such a tangle is guaranteed by \lemTangles.}
 
-However, since the top part of the knot no longer has any intersections, it is
-equivalent to the top half of the full closure of the large tangle, as well as
-the connection $(t_1,~t_{2n})$ (see \figFull).
+By \lemTangles we know that there exists a tangle, which we will presumptuously
+name $T$, such that $\beta(T)=R'$.
+Note that the knot with have created with the tangle $R'$ at the bottom is
+equivalent to $\phi(T)$ with the added stitching $(t_1,~t_{2n})$ since the top
+part of the knot no longer has any intersections (see \figFinal).
+Also note that this knot is still equivalent to $K$.
 
-We know that since every ribbon knot has a ribbon presentation, then removing
-the ribbons that connect the components of the knot results in the $n$-component
+We know that since every ribbon knot has a ribbon presentation, removing the
+ribbons that connect the components of the knot results in the $n$-component
 unlink (see \figPresentation).
-We also know that if were to take our constructed tangle that encloses all of
-the crossings of our knot and top close the tangle, the result would be very
-similar the full closure that we constructed earlier (see \figTop).
-The reason for this is that the top closure would close each component with its
-other end, effectively removing all of the connecting ribbons (see \figTwisted).
+We note that $\tau(T)$ is very similar to $\phi(T)$ with the added stitching
+$(t_1,~t_{2n})$.
+The only difference between the two is the ribbons in the latter that are not
+present in the former.
+However, we know that removing the ribbons from a ribbon presentation leaves
+just the components, which are equivalent to an unlink.
+Thus, $\tau(R')$ is an unlink so $(\beta\circ\tau)(T)$ is as well.
+Note that the above is justified as the operations $\beta$ and $\tau$ are
+commutative.
+But we also know that $K$ is equivalent to $\phi(T)$ with the added stitching
+$(t_1,~t_{2n})$.
 
-Thus, the top closure of our tangle forms the unlink, as it removes all the
-ribbons from a ribbon knot.
-This means that this tangle satisfies the conditions of $T$ in \lemTangles.
-As a consequence, we know that there must exist a tangle $T'$ that can be closed
-along the bottom to result in $T$.
-
-We know that this $T'$ can be top closed to result in the untangle, as $T$ can
-be top closed to result in the unlink (see \figLemma).
-Additionally, if the bottom half of the full closure of $T'$ results in $T$ and
-the top half of the full closure with the connection $(t_1,~t_{2n})$ of $T$
-results in our knot, then the full closure of $T'$ with the same connection also
-results in our knot.
-
-Therefore, this tangle given to us by \lemTangles satisfies the conditions we
-want and we have shown its existence, proving the theorem.
+Therefore, $T$ satisfies the conditions of the theorem.
 \end{proof}
 
 \papersec{Symmetric Unions}
 
+The proof of \thmRibbon gives us a way of finding a tangle satisfying the stated
+properties.
+All that it requires is the ribbon presentation of a knot.
+However, we found that was much easier to find such tangles for the first 21
+ribbon knots by using their symmetric unions.
+
 It is known that all 21 ribbon knots with 10 crossings or fewer can be drawn as
 symmetric unions (see \cite{many} and \cite{one}).
-This allows us to find a tangle satisfying the conditions of \thmRibbon for each
-of these 21 ribbon knots.
-This is possible due to the fact that adjusting a few connections in a symmetric
-union makes it untwist and untangle as we would like it to after applying the
-top closure (see \figTop).
-Surprisingly, each of these tangles only has 2 components, despite the fact that
-there is no requirement stipulating that this must be the case.
+This helps us find tangles satisfying the conditions of \thmRibbon.
+One of the reasons why it is easier is because adjusting a few connections in a
+symmetric union makes it untwist and untangle, which is the first condition that
+$T$ must satisfy.
+The second condition is very easy to satisfy if we define our tangle my starting
+with our knot and making a few cuts.
+
+What is surprising is that each of the resulting tangles only had 4 strands,
+despite the fact that there is no requirement stipulating that this must be the
+case.
 
 \begin{paperqtn}{Components}
-Do all the tangles for ribbon knots that are generated by \thmRibbon have 2
-components?
+Do all the tangles for ribbon knots that are generated by \thmRibbon have 4
+strands?
 \end{paperqtn}
 
-These tangles are obtained from the original knots by locating 4 places in which
-to cut the knot.
-The result is the tangle and if it is labeled properly from $t_1$ to $b_4$ then
-the full closure will undo the earlier cuts and the top closure will untangle it.
+These tangles are obtained from the original knots by locating cutting the knot
+in four places.
+Each cut creates two new ends and the stitchings that would undo our cuts are
+$(t_1,~t_4)$, $(b_1,~b_2)$, $(t_2,~t_3)$, and $(b_3,~b_4)$.
+From this alone, it is clear that the tangle that we create will satisfy the
+second condition of \thmRibbon, that its full closure with one additional
+stitching must be the original knot.
+Now we just need to ensure that the top and bottom closures of our tangle
+result in the unlink.
 
 The locations of the two cuts that result in the ends $b_1$ and $b_2$, as well
 as $b_3$ and $b_4$, are, in general, not very interesting.
