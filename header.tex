@@ -85,33 +85,42 @@
 \newtheorem{theorem}[subsection]{Theorem}
 \theoremstyle{definition}
 \newtheorem{question}[subsection]{Question}
-\newenvironment{paperclm}[1]
-{\begin{claim}\global\expandafter\edef\csname clm##1\endcsname{
-Claim \thesubsection\noexpand\xspace}}{\end{claim}}
-\newenvironment{papercnj}[1]
-{\begin{conjecture}\global\expandafter\edef\csname cnj##1\endcsname{
-Conjecture \thesubsection\noexpand\xspace}}{\end{conjecture}}
-\newenvironment{papercor}[1]
-{\begin{corollary}\global\expandafter\edef\csname cor##1\endcsname{
-Corollary \thesubsection\noexpand\xspace}}{\end{corollary}}
-\newenvironment{paperdef}[1]
-{\begin{definition}\global\expandafter\edef\csname def##1\endcsname{
-Definition \thesubsection\noexpand\xspace}}{\end{definition}}
-\newenvironment{paperlem}[1]
-{\begin{lemma}\global\expandafter\edef\csname lem##1\endcsname{
-Lemma \thesubsection\noexpand\xspace}}{\end{lemma}}
-\newenvironment{paperprp}[1]
-{\begin{proposition}\global\expandafter\edef\csname prp##1\endcsname{
-Proposition \thesubsection\noexpand\xspace}}{\end{proposition}}
-\newenvironment{paperqtn}[1]
-{\begin{question}\global\expandafter\edef\csname qtn##1\endcsname{
-Question \thesubsection\noexpand\xspace}}{\end{question}}
-\newenvironment{paperrem}[1]
-{\begin{remark}\global\expandafter\edef\csname rem##1\endcsname{
-Remark \thesubsection\noexpand\xspace}}{\end{remark}}
-\newenvironment{paperthm}[1]
-{\begin{theorem}\global\expandafter\edef\csname thm##1\endcsname{
-Theorem \thesubsection\noexpand\xspace}}{\end{theorem}}}
+\newcommand\paperclm[2]
+{\begin{claim}\global\expandafter\edef
+\csname clm##1\endcsname{Claim \thesubsection\noexpand\xspace}
+##2\end{claim}}
+\newcommand\papercnj[2]
+{\begin{conjecture}\global\expandafter\edef
+\csname cnj##1\endcsname{Conjecture \thesubsection\noexpand\xspace}
+##2\end{conjecture}}
+\newcommand\papercor[2]
+{\begin{corollary}\global\expandafter\edef
+\csname cor##1\endcsname{Corollary \thesubsection\noexpand\xspace}
+##2\end{corollary}}
+\newcommand\paperdef[2]
+{\begin{definition}\global\expandafter\edef
+\csname def##1\endcsname{Definition \thesubsection\noexpand\xspace}
+##2\end{definition}}
+\newcommand\paperlem[2]
+{\begin{lemma}\global\expandafter\edef
+\csname lem##1\endcsname{Lemma \thesubsection\noexpand\xspace}
+##2\end{lemma}}
+\newcommand\paperprp[2]
+{\begin{proposition}\global\expandafter\edef
+\csname prp##1\endcsname{Proposition \thesubsection\noexpand\xspace}
+##2\end{proposition}}
+\newcommand\paperqtn[2]
+{\begin{question}\global\expandafter\edef
+\csname qtn##1\endcsname{Question \thesubsection\noexpand\xspace}
+##2\end{question}}
+\newcommand\paperrem[2]
+{\begin{remark}\global\expandafter\edef
+\csname rem##1\endcsname{Remark \thesubsection\noexpand\xspace}
+##2\end{remark}}
+\newcommand\paperthm[2]
+{\begin{theorem}\global\expandafter\edef
+\csname thm##1\endcsname{Theorem \thesubsection\noexpand\xspace}
+##2\end{theorem}}}
 \newcommand\subtheorems[0]{\stepcounter{paperthmamount}
 \theoremstyle{remark}
 \newtheorem{claim}[subsubsection]{Claim}
@@ -131,33 +140,42 @@ Theorem \thesubsection\noexpand\xspace}}{\end{theorem}}}
 \newtheorem{theorem}[subsubsection]{Theorem}
 \theoremstyle{definition}
 \newtheorem{question}[subsubsection]{Question}
-\newenvironment{paperclm}[1]
-{\begin{claim}\global\expandafter\edef\csname clm##1\endcsname{
-Claim \thesubsubsection\noexpand\xspace}}{\end{claim}}
-\newenvironment{papercnj}[1]
-{\begin{conjecture}\global\expandafter\edef\csname cnj##1\endcsname{
-Conjecture \thesubsubsection\noexpand\xspace}}{\end{conjecture}}
-\newenvironment{papercor}[1]
-{\begin{corollary}\global\expandafter\edef\csname cor##1\endcsname{
-Corollary \thesubsubsection\noexpand\xspace}}{\end{corollary}}
-\newenvironment{paperdef}[1]
-{\begin{definition}\global\expandafter\edef\csname def##1\endcsname{
-Definition \thesubsubsection\noexpand\xspace}}{\end{definition}}
-\newenvironment{paperlem}[1]
-{\begin{lemma}\global\expandafter\edef\csname lem##1\endcsname{
-Lemma \thesubsubsection\noexpand\xspace}}{\end{lemma}}
-\newenvironment{paperprp}[1]
-{\begin{proposition}\global\expandafter\edef\csname prp##1\endcsname{
-Proposition \thesubsubsection\noexpand\xspace}}{\end{proposition}}
-\newenvironment{paperqtn}[1]
-{\begin{question}\global\expandafter\edef\csname qtn##1\endcsname{
-Question \thesubsubsection\noexpand\xspace}}{\end{question}}
-\newenvironment{paperrem}[1]
-{\begin{remark}\global\expandafter\edef\csname rem##1\endcsname{
-Remark \thesubsubsection\noexpand\xspace}}{\end{remark}}
-\newenvironment{paperthm}[1]
-{\begin{theorem}\global\expandafter\edef\csname thm##1\endcsname{
-Theorem \thesubsubsection\noexpand\xspace}}{\end{theorem}}}
+\newcommand\paperclm[2]
+{\begin{claim}\global\expandafter\edef
+\csname clm##1\endcsname{Claim \thesubsubsection\noexpand\xspace}
+##2\end{claim}}
+\newcommand\papercnj[2]
+{\begin{conjecture}\global\expandafter\edef
+\csname cnj##1\endcsname{Conjecture \thesubsubsection\noexpand\xspace}
+##2\end{conjecture}}
+\newcommand\papercor[2]
+{\begin{corollary}\global\expandafter\edef
+\csname cor##1\endcsname{Corollary \thesubsubsection\noexpand\xspace}
+##2\end{corollary}}
+\newcommand\paperdef[2]
+{\begin{definition}\global\expandafter\edef
+\csname def##1\endcsname{Definition \thesubsubsection\noexpand\xspace}
+##2\end{definition}}
+\newcommand\paperlem[2]
+{\begin{lemma}\global\expandafter\edef
+\csname lem##1\endcsname{Lemma \thesubsubsection\noexpand\xspace}
+##2\end{lemma}}
+\newcommand\paperprp[2]
+{\begin{proposition}\global\expandafter\edef
+\csname prp##1\endcsname{Proposition \thesubsubsection\noexpand\xspace}
+##2\end{proposition}}
+\newcommand\paperqtn[2]
+{\begin{question}\global\expandafter\edef
+\csname qtn##1\endcsname{Question \thesubsubsection\noexpand\xspace}
+##2\end{question}}
+\newcommand\paperrem[2]
+{\begin{remark}\global\expandafter\edef
+\csname rem##1\endcsname{Remark \thesubsubsection\noexpand\xspace}
+##2\end{remark}}
+\newcommand\paperthm[2]
+{\begin{theorem}\global\expandafter\edef
+\csname thm##1\endcsname{Theorem \thesubsubsection\noexpand\xspace}
+##2\end{theorem}}}
 
 % Title section
 \pagestyle{fancy}
