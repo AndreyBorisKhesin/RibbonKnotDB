@@ -185,17 +185,29 @@
 {{\centering\fontsize{20pt}{20pt}\textsc{#1}\\\mbox{}\\}
 \fancyhead[OC]{\fontsize{12pt}{12pt}\selectfont\textit{#1}}}
 \newcounter{people}
-\newcommand\paperauthtext[4]{{\centering\fontsize{12pt}{12pt}\selectfont
-\textsc{#1. #2}\\[-0.1em]{\fontsize{9pt}{9pt}\selectfont\textit{\ifx&#3&
-\vspace{-1em}\else#3\fi}}\\\mbox{}\\
-\fancyhead[EC]{\fontsize{12pt}{12pt}\selectfont\textit{#4}}}}
-\newcommand\paperauth[3]{{\stepcounter{people}
+\newcommand\paperauthtext[3]{{\centering\fontsize{12pt}{12pt}\selectfont
+\textsc{#1}\\[-0.1em]{\fontsize{9pt}{9pt}\selectfont\textit{\ifx&#2&
+\vspace{-1em}\else#2\fi}}\\\mbox{}\\
+\fancyhead[EC]{\fontsize{12pt}{12pt}\selectfont\textit{#3}}}}
+\newcommand\paperauth[2]{{\stepcounter{people}
 \ifnum\value{people}=1
-{\paperauthtext{#1}{#2}{#3}{#1. #2}
-\global\def\auth{#2\xspace}}
+{\paperauthtext{#1}{#2}{#1}
+\global\def\auth{#1\xspace}}
 \else\ifnum\value{people}=2
-{\paperauthtext{#1}{#2}{#3}{\auth and #2}}
-\else{\paperauthtext{#1}{#2}{#3}{\auth et al}}\fi\fi}}
+{\paperauthtext{#1}{#2}{\auth and #1}}
+\else{\paperauthtext{#1}{#2}{\auth et al}}\fi\fi}}
+\newcommand\physics[0]{
+\renewcommand\paperauthtext[4]{{\centering\fontsize{12pt}{12pt}\selectfont
+\textsc{##1. ##2}\\[-0.1em]{\fontsize{9pt}{9pt}\selectfont\textit{\ifx&##3&
+\vspace{-1em}\else##3\fi}}\\\mbox{}\\
+\fancyhead[EC]{\fontsize{12pt}{12pt}\selectfont\textit{##4}}}}
+\renewcommand\paperauth[3]{{\stepcounter{people}
+\ifnum\value{people}=1
+{\paperauthtext{##1}{##2}{##3}{##1. ##2}
+\global\def\auth{##2\xspace}}
+\else\ifnum\value{people}=2
+{\paperauthtext{##1}{##2}{##3}{\auth and ##2}}
+\else{\paperauthtext{##1}{##2}{##3}{\auth et al}}\fi\fi}}}
 \newcommand\paperdate[1]{{\centering\fontsize{9pt}{9pt}\selectfont\text{
 (Received #1)}\\[2em]}}
 
