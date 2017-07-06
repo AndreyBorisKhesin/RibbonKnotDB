@@ -7,7 +7,7 @@
 *.out
 *.toc
 *.fmt
-ribbonknotdb.pdf
+ribbonknotdb*.pdf
 
 ## Intermediate documents:
 *.dvi
