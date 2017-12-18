@@ -659,15 +659,21 @@ width of the ribbon, thereby making two cuts there and four cuts in total.
 
 The author was originally planning on using \cite{knots} to accomplish this, as
 it includes a table of 2-component ribbon presentations of all of the ribbon
-knots with 10 crossings or fewer.
+knots with 10 crossings or fewer in Appendix F.5 (pp. 279--281).
 However, since both the symmetric unions in \cite{one} and \cite{many} and the
 ribbon presentations in \cite{knots} contained far more crossings than the
-minimal crossing number of the respective knots, they were verified for accuracy
-by computing both their Alexander and Jones polynomials.
+minimal crossing numbers of their respective knots, the accuracy of the diagrams
+was verified by computing their Alexander and Jones polynomials.
 
-It was found that the Alexander polynomials of all of the knots in \cite{knots}
-were correct, but the Jones polynomials of four of the knots were not.
-These knots are $9_{27}$, $10_{42}$, $10_{75}$, and $10_{99}$.
+It was found that computing the Alexander polynomials of the 21 ribbon
+presentations in \cite{knots} yielded the correct results.
+However, when the Jones polynomials of the same knot diagrams were computed,
+the resulting polynomials only matched the known results for only 17 of the 21
+knot diagrams.
+This means that four of the knot diagrams are mislabeled and represent knots
+with a minimal crossing number that is greater than 10.
+These are the knot diagrams labeled $9_{27}$, $10_{42}$, $10_{75}$, and
+$10_{99}$.
 The reason for this might be that a double delta move was accidentally performed
 while in search of a ribbon presentation as the double delta move preserves the
 Alexander polynomial.
